@@ -20,6 +20,5 @@ database.yml
 doc/
 *.swp
 *~
-secrets.yml
 .project
 .idea
