@@ -39,4 +39,7 @@ Rails.application.configure do
 
   # Speed up test by lowering bcrypt's cost function
   ActiveModel::SecurePassword.min_cost = true
+
+  # Satisfy RSPEC tests that want a host to send requests to
+  Rails.application.routes.default_url_options[:host] = 'localhost:3000'
 end
