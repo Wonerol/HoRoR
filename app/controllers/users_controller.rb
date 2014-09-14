@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
-  before_action :signed_in_user, only: [:index, :edit, :update, :destroy]
-  before_action :correct_user,   only: [:edit, :update]
+  before_action :signed_in_user, only: [:index, :edit, :update, :destroy, :show_army, :show]
+  before_action :correct_user,   only: [:edit, :update, :show_army]
   before_action :admin_user, only: :destroy
 
   def destroy
@@ -20,6 +20,9 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+  end
+
+  def show_army
   end
 
   def new

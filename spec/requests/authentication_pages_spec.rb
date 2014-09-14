@@ -32,6 +32,7 @@ describe "AuthenticationPages" do
       it { should have_title(user.name) }
       it { should have_link('Users',       href: users_path) }
       it { should have_link('Monster Market', href: monsters_path) }
+      it { should have_link('Army Overview', href: user_path(user) + "/army") }
       it { should have_link('Profile',     href: user_path(user)) }
       it { should have_link('Settings',    href: edit_user_path(user)) }
       it { should have_link('Sign out',    href: signout_path) }
@@ -43,6 +44,7 @@ describe "AuthenticationPages" do
         it { should_not have_link('Profile',     href: user_path(user)) }
         it { should_not have_link('Settings',    href: edit_user_path(user)) }
         it { should_not have_link('Monster Market', href: monsters_path) }
+        it { should_not have_link('Army Overview') }
       end
     end
   end
@@ -99,6 +101,13 @@ describe "AuthenticationPages" do
         before { patch user_path(wrong_user) }
         specify { expect(response).to redirect_to(root_path) }
       end
+
+      describe "submitting a GET request to the Users#show_army action" do
+        before { get user_path(wrong_user) + "/army" }
+        specify { expect(response.body).not_to match(full_title('Army Overview')) }
+        specify { expect(response).to redirect_to(root_path) }
+      end
+
     end
 
     describe "as non-admin user" do

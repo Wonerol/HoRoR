@@ -1,6 +1,9 @@
 <td>
   <figure>
-    <%= image_tag(monster.image_path, class: "monsters_image", alt: "(picture of #{monster.name})") %>
+    <%= link_to(image_tag(monster.image_path, class: "monsters_image", alt: "(picture of #{monster.name})"), monster) %>
+
+    <%-# image_tag(monster.image_path, class: "monsters_image", alt: "(picture of #{monster.name})") #%>
+
     <figcaption style="text-align:center">
     <%= link_to monster.name, monster, class: "monsters_label" %>
     </figcaption>

@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
-  resources :monsters, only: [:index, :show]
+
   resources :users
+  resources :monsters, only: [:index, :show]
   resources :sessions, only: [:new, :create, :destroy]
 
   root 'static_pages#home'
 
+  match ':user/:id/army', to: 'users#show_army', via: 'get'
   match '/signup', to: 'users#new', via: 'get'
   match '/signin', to: 'sessions#new', via: 'get'
   match '/signout', to: 'sessions#destroy', via: 'delete'
