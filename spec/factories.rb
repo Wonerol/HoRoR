@@ -9,4 +9,9 @@ FactoryGirl.define do
       admin true
     end
   end
+
+  factory :monster do
+    sequence(:name) { |n| "Monster #{n}" }
+    image_path "doctor_c.jpg"
+  end
 end

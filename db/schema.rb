@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140913012725) do
+ActiveRecord::Schema.define(version: 20140913231053) do
+
+  create_table "monsters", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "image_path"
+  end
+
+  add_index "monsters", ["name"], name: "index_monsters_on_name", unique: true
 
   create_table "users", force: true do |t|
     t.string   "name"

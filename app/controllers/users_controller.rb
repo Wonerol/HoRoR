@@ -3,12 +3,15 @@ class UsersController < ApplicationController
   before_action :correct_user,   only: [:edit, :update]
   before_action :admin_user, only: :destroy
 
-  before_action :deny_creation_to_users, only: [:new, :create]
-
   def destroy
-    User.find(params[:id]).destroy
-    flash[:success] = "User deleted."
-    redirect_to users_url
+    found_user = User.find(params[:id])
+    if found_user != current_user
+      found_user.destroy
+      flash[:success] = "User deleted."
+      redirect_to users_url
+    else
+      flash[:failure] = "Cannot delete yourself."
+    end
   end
 
   def index
@@ -49,12 +52,6 @@ class UsersController < ApplicationController
   private
     def user_params
       params.require(:user).permit(:name, :email, :password, :password_confirmation)
-    end
-
-    def deny_creation_to_users
-      if signed_in?
-        redirect_to(root_url)
-      end
     end
 
     def signed_in_user
