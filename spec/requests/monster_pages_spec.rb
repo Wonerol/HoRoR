@@ -1,11 +1,16 @@
 require 'spec_helper'
+include ApplicationHelper
 
 describe "Monster pages" do
 
   subject { page }
 
   describe "index" do
-    before { visit monsters_path }
+    let(:user) { FactoryGirl.create(:user) }
+    before do 
+      sign_in user
+      visit monsters_path
+    end
 
     FactoryGirl.create(:monster)
 
@@ -28,11 +33,20 @@ describe "Monster pages" do
   end
 
   describe "monster profile page" do
+    let(:user) { FactoryGirl.create(:user) }
     let(:monster) { FactoryGirl.create(:monster) }
-    before { visit monster_path(monster) }
+    before do 
+      sign_in user
+      visit monster_path(monster)
+    end
 
     it { should have_content(monster.name) }
     it { should have_title(monster.name) }
+
+    describe "allows recruitment" do
+      #click_button "Recruit"
+      # should increment something
+    end
   end
 
 end

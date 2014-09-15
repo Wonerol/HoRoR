@@ -1,4 +1,9 @@
 <% provide(:title, @monster.name) %>
+
 <h1><%= @monster.name %></h1>
+
 <%= image_tag(image_path_for(@monster), alt: "(picture of #{@monster.name})") %>
+
 <p><i><%= @monster.flavour_text %></i><p>
+
+<%-#= button_to 'Recruit', {controller: "armies", action: "create", monster_id: @monster.id, user_id: current_user.id} , method: :post #%>

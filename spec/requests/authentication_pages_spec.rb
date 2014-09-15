@@ -68,7 +68,6 @@ describe "AuthenticationPages" do
       end
 
       describe "in the Users controller" do
-
         describe "visiting the edit page" do
           before { visit edit_user_path(user) }
           it { should have_title('Sign in') }
@@ -81,6 +80,21 @@ describe "AuthenticationPages" do
 
         describe "visiting the user index" do
           before { visit users_path }
+          it { should have_title('Sign in') }
+        end
+      end
+
+      describe "in the Monsters controller" do
+        describe "visiting the monster index" do
+          before { visit monsters_path }
+          it { should have_title('Sign in') }
+        end
+
+        describe "visiting the monster show" do
+          let(:monster) { FactoryGirl.create(:monster) }
+          before do 
+            visit monster_path(monster)
+          end
           it { should have_title('Sign in') }
         end
       end

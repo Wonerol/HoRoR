@@ -1,3 +1,5 @@
+include Authorization_Helper
+
 class UsersController < ApplicationController
   before_action :signed_in_user, only: [:index, :edit, :update, :destroy, :show_army, :show]
   before_action :correct_user,   only: [:edit, :update, :show_army]
@@ -57,6 +59,7 @@ class UsersController < ApplicationController
       params.require(:user).permit(:name, :email, :password, :password_confirmation)
     end
 
+=begin
     def signed_in_user
       unless signed_in?
         store_location
@@ -72,5 +75,6 @@ class UsersController < ApplicationController
     def admin_user
       redirect_to(root_url) unless current_user.admin?
     end
+=end
 
 end
