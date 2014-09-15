@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster_listing>
+
+  <monster>
+    <name>Peasant</name>
+    <flavour_text></flavour_text>
+    <price>20</price>
+  </monster>
+  <monster>
+    <name>Archer</name>
+    <flavour_text>Pew pew!</flavour_text>
+    <price>150</price>
+  </monster>
+  <monster>
+    <name>Ranger</name>
+    <flavour_text></flavour_text>
+    <price>200</price>
+  </monster>
+  <monster>
+    <name>Pikeman</name>
+    <flavour_text></flavour_text>
+    <price>200</price>
+  </monster>
+  <monster>
+    <name>Veteran Pikeman</name>
+    <flavour_text></flavour_text>
+    <price>250</price>
+  </monster>
+  <monster>
+    <name>Swordsman</name>
+    <flavour_text></flavour_text>
+    <price>250</price>
+  </monster>
+  <monster>
+    <name>Master Swordsman</name>
+    <flavour_text></flavour_text>
+    <price>300</price>
+  </monster>
+  <monster>
+    <name>Cavalry</name>
+    <flavour_text></flavour_text>
+    <price>300</price>
+  </monster>
+  <monster>
+    <name>Champion</name>
+    <flavour_text></flavour_text>
+    <price>375</price>
+  </monster>
+  <monster>
+    <name>Paladin</name>
+    <flavour_text></flavour_text>
+    <price>600</price>
+  </monster>
+  <monster>
+    <name>Crusader</name>
+    <flavour_text></flavour_text>
+    <price>1000</price>
+  </monster>
+  <monster>
+    <name>Goblin</name>
+    <flavour_text></flavour_text>
+    <price>40</price>
+  </monster>
+  <monster>
+    <name>Orc</name>
+    <flavour_text></flavour_text>
+    <price>140</price>
+  </monster>
+  <monster>
+    <name>Orc Chieftain</name>
+    <flavour_text></flavour_text>
+    <price>175</price>
+  </monster>
+  <monster>
+    <name>Wolf</name>
+    <flavour_text></flavour_text>
+    <price>200</price>
+  </monster>
+  <monster>
+    <name>Ogre</name>
+    <flavour_text></flavour_text>
+    <price>300</price>
+  </monster>
+  <monster>
+    <name>Ogre Lord</name>
+    <flavour_text></flavour_text>
+    <price>500</price>
+  </monster>
+  <monster>
+    <name>Troll</name>
+    <flavour_text></flavour_text>
+    <price>600</price>
+  </monster>
+  <monster>
+    <name>War Troll</name>
+    <flavour_text></flavour_text>
+    <price>700</price>
+  </monster>
+  <monster>
+    <name>Cyclops</name>
+    <flavour_text></flavour_text>
+    <price>750</price>
+  </monster>
+  <monster>
+    <name>Sprite</name>
+    <flavour_text></flavour_text>
+    <price>50</price>
+  </monster>
+  <monster>
+    <name>Dwarf</name>
+    <flavour_text></flavour_text>
+    <price>200</price>
+  </monster>
+  <monster>
+    <name>Battle Dwarf</name>
+    <flavour_text></flavour_text>
+    <price>250</price>
+  </monster>
+  <monster>
+    <name>Elf</name>
+    <flavour_text></flavour_text>
+    <price>250</price>
+  </monster>
+  <monster>
+    <name>Grand Elf</name>
+    <flavour_text></flavour_text>
+    <price>300</price>
+  </monster>
+  <monster>
+    <name>Druid</name>
+    <flavour_text></flavour_text>
+    <price>350</price>
+  </monster>
+  <monster>
+    <name>Greater Druid</name>
+    <flavour_text></flavour_text>
+    <price>400</price>
+  </monster>
+  <monster>
+    <name>Unicorn</name>
+    <flavour_text></flavour_text>
+    <price>500</price>
+  </monster>
+  <monster>
+    <name>Phoenix</name>
+    <flavour_text></flavour_text>
+    <price>1500</price>
+  </monster>
+  <monster>
+    <name>Centaur</name>
+    <flavour_text></flavour_text>
+    <price>60</price>
+  </monster>
+  <monster>
+    <name>Gargoyle</name>
+    <flavour_text></flavour_text>
+    <price>200</price>
+  </monster>
+  <monster>
+    <name>Griffin</name>
+    <flavour_text></flavour_text>
+    <price>300</price>
+  </monster>
+  <monster>
+    <name>Minotaur</name>
+    <flavour_text></flavour_text>
+    <price>400</price>
+  </monster>
+  <monster>
+    <name>Minotaur King</name>
+    <flavour_text></flavour_text>
+    <price>500</price>
+  </monster>
+  <monster>
+    <name>Hydra</name>
+    <flavour_text></flavour_text>
+    <price>800</price>
+  </monster>
+  <monster>
+    <name>Green Dragon</name>
+    <flavour_text></flavour_text>
+    <price>3000</price>
+  </monster>
+  <monster>
+    <name>Red Dragon</name>
+    <flavour_text></flavour_text>
+    <price>3500</price>
+  </monster>
+  <monster>
+    <name>Black Dragon</name>
+    <flavour_text></flavour_text>
+    <price>4000</price>
+  </monster>
+  <monster>
+    <name>Halfling</name>
+    <flavour_text>If you've been ridiculed for having achondroplasiaphobia, these halflings can help justify your fears. Their creepy cherubic charm is inversely proportional to their swarming numbers, where they can easily stab or stone a foe to death. David would be proud.</flavour_text>
+    <price>50</price>
+  </monster>
+  <monster>
+    <name>Boar</name>
+    <flavour_text>After a millenia of dodging hunting spears and roast spits, boars have evolved into surprisingly fast and agile creatures. Once on the run, a boar's harden skull and tusks can ram anything silly enough to stand in its way to freedom. This is an ideal unit for scouting and company barbeques after a long campaign.</flavour_text>
+    <price>150</price>
+  </monster>
+  <monster>
+    <name>Iron Golem</name>
+    <flavour_text></flavour_text>
+    <price>300</price>
+  </monster>
+  <monster>
+    <name>Steel Golem</name>
+    <flavour_text></flavour_text>
+    <price>350</price>
+  </monster>
+  <monster>
+    <name>Roc</name>
+    <flavour_text></flavour_text>
+    <price>400</price>
+  </monster>
+  <monster>
+    <name>Mage</name>
+    <flavour_text></flavour_text>
+    <price>500</price>
+  </monster>
+  <monster>
+    <name>Archmage</name>
+    <flavour_text></flavour_text>
+    <price>700</price>
+  </monster>
+  <monster>
+    <name>Giant</name>
+    <flavour_text></flavour_text>
+    <price>2000</price>
+  </monster>
+  <monster>
+    <name>Titan</name>
+    <flavour_text></flavour_text>
+    <price>5000</price>
+  </monster>
+  <monster>
+    <name>Skeleton</name>
+    <flavour_text>There's a little skeleton in us all</flavour_text>
+    <price>75</price>
+  </monster>
+  <monster>
+    <name>Zombie</name>
+    <flavour_text></flavour_text>
+    <price>150</price>
+  </monster>
+  <monster>
+    <name>Mutant Zombie</name>
+    <flavour_text></flavour_text>
+    <price>200</price>
+  </monster>
+  <monster>
+    <name>Mummy</name>
+    <flavour_text></flavour_text>
+    <price>250</price>
+  </monster>
+  <monster>
+    <name>Royal Mummy</name>
+    <flavour_text></flavour_text>
+    <price>300</price>
+  </monster>
+  <monster>
+    <name>Vampire</name>
+    <flavour_text></flavour_text>
+    <price>500</price>
+  </monster>
+  <monster>
+    <name>Vampire Lord</name>
+    <flavour_text></flavour_text>
+    <price>650</price>
+  </monster>
+  <monster>
+    <name>Lich</name>
+    <flavour_text></flavour_text>
+    <price>750</price>
+  </monster>
+  <monster>
+    <name>Power Lich</name>
+    <flavour_text></flavour_text>
+    <price>900</price>
+  </monster>
+  <monster>
+    <name>Bone Dragon</name>
+    <flavour_text></flavour_text>
+    <price>1500</price>
+  </monster>
+  <monster>
+    <name>Rogue</name>
+    <flavour_text></flavour_text>
+    <price>50</price>
+  </monster>
+  <monster>
+    <name>Nomad</name>
+    <flavour_text></flavour_text>
+    <price>200</price>
+  </monster>
+  <monster>
+    <name>Ghost</name>
+    <flavour_text></flavour_text>
+    <price>1000</price>
+  </monster>
+  <monster>
+    <name>Medusa</name>
+    <flavour_text></flavour_text>
+    <price>350</price>
+  </monster>
+  <monster>
+    <name>Genie</name>
+    <flavour_text></flavour_text>
+    <price>750</price>
+  </monster>
+  <monster>
+    <name>Earth Elemental</name>
+    <flavour_text></flavour_text>
+    <price>500</price>
+  </monster>
+  <monster>
+    <name>Water Elemental</name>
+    <flavour_text></flavour_text>
+    <price>500</price>
+  </monster>
+  <monster>
+    <name>Fire Elemental</name>
+    <flavour_text></flavour_text>
+    <price>500</price>
+  </monster>
+  <monster>
+    <name>Air Elemental</name>
+    <flavour_text></flavour_text>
+    <price>500</price>
+  </monster>
+
+</monster_listing>

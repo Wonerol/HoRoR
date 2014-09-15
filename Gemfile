@@ -15,6 +15,9 @@ gem 'bcrypt-ruby', '3.1.2'
 # generate fake data to fill the database
 gem 'faker', '1.1.2'
 
+# XML parser
+gem "nokogiri", '1.6.3.1', :require => "nokogiri"
+
 # pagination
 gem 'will_paginate', '3.0.4'
 gem 'bootstrap-will_paginate', '0.0.9'

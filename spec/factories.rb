@@ -12,6 +12,6 @@ FactoryGirl.define do
 
   factory :monster do
     sequence(:name) { |n| "Monster #{n}" }
-    image_path "doctor_c.jpg"
+    flavour_text "It's been a tough year for monster mercenaries"
   end
 end

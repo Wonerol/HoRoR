@@ -28,7 +28,6 @@
 
 .monsters_cell {
   display: table-cell;
-  /*vertical-align: middle;*/
   height: 100%;
   width: 100%;
 }
@@ -40,4 +39,7 @@
 .monsters_image {
   max-width: 100px;
   max-height: 100px;
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto
 }
