@@ -43,9 +43,9 @@ describe "Monster pages" do
     it { should have_content(monster.name) }
     it { should have_title(monster.name) }
 
-    describe "allows recruitment" do
-      #click_button "Recruit"
+    it "allows recruitment" do
       # should increment something
+      expect { click_button "Recruit" }.to change(Army, :count).by(1)
     end
   end
 

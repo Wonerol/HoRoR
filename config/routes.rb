@@ -3,9 +3,11 @@ Rails.application.routes.draw do
   resources :users
   resources :monsters, only: [:index, :show]
   resources :sessions, only: [:new, :create, :destroy]
+  resources :armies, only: [:recruit]
 
   root 'static_pages#home'
 
+  match '/recruit', to: 'armies#recruit', via: 'post'
   match ':user/:id/army', to: 'users#show_army', via: 'get'
   match '/signup', to: 'users#new', via: 'get'
   match '/signin', to: 'sessions#new', via: 'get'
