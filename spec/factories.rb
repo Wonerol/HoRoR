@@ -14,4 +14,9 @@ FactoryGirl.define do
     sequence(:name) { |n| "Monster #{n}" }
     flavour_text "It's been a tough year for monster mercenaries"
   end
+
+  factory :army do
+    monster_id { Monster.first.id || FactoryGirl.create(:monster).id }
+  end
+    
 end

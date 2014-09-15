@@ -3,12 +3,14 @@ Rails.application.routes.draw do
   resources :users
   resources :monsters, only: [:index, :show]
   resources :sessions, only: [:new, :create, :destroy]
-  resources :armies, only: [:recruit]
+  resources :armies, only: [:recruit, :show]
 
   root 'static_pages#home'
 
+  # armies/:id actually uses User id This seems... suboptimal
+  match '/armies/', to: 'armies#show', via: 'get'
+
   match '/recruit', to: 'armies#recruit', via: 'post'
-  match ':user/:id/army', to: 'users#show_army', via: 'get'
   match '/signup', to: 'users#new', via: 'get'
   match '/signin', to: 'sessions#new', via: 'get'
   match '/signout', to: 'sessions#destroy', via: 'delete'

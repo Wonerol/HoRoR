@@ -9,7 +9,9 @@ module Authorization_Helper
   end
 
   def correct_user
-    @user = User.find(params[:id])
+    authorization_param = params[:id]
+    authorization_param ||= params[:user_id]
+    @user = User.find(authorization_param)
     redirect_to(root_url) unless current_user?(@user)
   end
 

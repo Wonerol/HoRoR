@@ -1,0 +1,11 @@
+<td>
+  <figure>
+  <div>
+    <%= link_to(image_tag(image_path_for(monster_stack[:monster]), class: "monsters_image", alt: "(picture of #{monster_stack[:monster].name})"), monster_stack[:monster]) %>
+  </div>
+
+    <figcaption style="text-align:center">
+      <%= "#{monster_stack[:monster].name}(#{monster_stack[:monster_amount]})" %>
+    </figcaption>
+  </figure>
+</td>

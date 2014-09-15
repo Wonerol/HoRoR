@@ -8,7 +8,7 @@
           <li><%= link_to "Help", help_path %></li>
           <% if signed_in? %>
             <li><%= link_to "Users", users_path %></li>
-            <li><%= link_to "Army Overview", user_path(current_user) + "/army" %></li>
+            <li><%= link_to "Army Overview", army_path(current_user) %></li>
             <li><%= link_to "Monster Market", monsters_path %></li>
             <li id="fat-menu" class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">

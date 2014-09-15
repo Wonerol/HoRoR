@@ -5,13 +5,11 @@
 <%= will_paginate %>
 
 <table>
-<% @monsters.in_groups_of(5, false) do |monsters| %>
-  <tr>
-    <% for monster in monsters %>
-      <%= render monster %>
-    <% end %>
-  </tr>
-<% end %>
+  <% @monsters.in_groups_of(5, false) do |monsters| %>
+    <tr>
+      <%= render monsters %>
+    </tr>
+  <% end %>
 </table>
 
 <%= will_paginate %>

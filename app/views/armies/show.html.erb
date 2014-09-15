@@ -1,0 +1,8 @@
+<% provide(:title, 'Army Overview') %>
+<h1>Your Army</h1>
+
+<table>
+  <tr>
+    <%= render :partial => 'monster_stack', :collection => @monster_stacks %>
+  </tr>
+</table>

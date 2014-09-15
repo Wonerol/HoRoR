@@ -1,6 +1,19 @@
-class ArmiesController < ApplicationController
+include Authorization_Helper
 
-  # needs error checking!!!
+class ArmiesController < ApplicationController
+  before_action :signed_in_user, only: [:show, :recruit]
+  before_action :correct_user,   only: [:show, :recruit]
+
+  def show
+    armies = Army.where(user_id: current_user.id)
+    @monster_stacks = Array.new
+    for army in armies
+      m = Monster.find(army.monster_id)
+      @monster_stacks.push( {monster: m, monster_amount: army.monster_amount} )
+    end
+  end
+
+# needs error checking!!!
 =begin
 when no army exists for user_id, monster_id pair -> army count increases
 when army exists "" -> army count stays the same increment monster_amount
