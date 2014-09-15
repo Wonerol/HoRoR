@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140914222832) do
+ActiveRecord::Schema.define(version: 20140915072803) do
 
   create_table "armies", force: true do |t|
     t.integer  "monster_id"
@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 20140914222832) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "flavour_text"
+    t.text     "flavour_text", limit: 255
   end
 
   add_index "monsters", ["name"], name: "index_monsters_on_name", unique: true
