@@ -36,7 +36,10 @@ monster_amount is a reasonable number
     self.assign_attributes({ :gold => new_gold })
 
     if army.nil?
-      army = Army.new(army_params)
+      army = Army.new(user_id: army_params[:user_id],
+                      monster_id: army_params[:monster_id],
+                      monster_amount: army_params[:monster_amount],
+                      ai_controlled: false)
     else
       new_num_monsters = army.monster_amount + num_monsters
       army.assign_attributes({ :monster_amount => new_num_monsters })

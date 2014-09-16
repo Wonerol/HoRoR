@@ -3,6 +3,6 @@
 
 <table>
   <tr>
-    <%= render :partial => 'monster_stack', :collection => @monster_stacks %>
+    <%= render :partial => 'monster_stack', :collection => @monster_stacks, locals: {image_class: 'monsters_image'} %>
   </tr>
 </table>

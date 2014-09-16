@@ -1,0 +1,31 @@
+<% provide(:title, "Battle") %>
+
+<h1>You went looking for trouble</h1>
+<h1>You found some</h1>
+
+<!-- ... -->
+<table>
+
+      <table style="margin-left:auto; margin-right:auto">
+        <tr>
+          <%= render partial: 'monster_stack', collection: @enemy_stacks, locals: {image_class: 'monsters_image monsters_image-reversed'} %>
+        </tr>
+      </table>
+
+      <tr>
+        <h1>VS</h1>
+      </tr>
+
+  <tr>
+      <table>
+        <tr>
+          <%= render :partial => 'monster_stack', :collection => @player_stacks, locals: {image_class: 'monsters_image'} %>
+        </tr>
+      </table>
+  </tr>
+
+</table>
+
+<%= link_to "Flee", army_path(current_user) %>
+
+<%= button_to 'Attack!', { controller: "armies", action: "battle", user_id: current_user.id, attack: true } , method: :post %>
