@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
-  has_many :armies
+  after_initialize :default_values
+  has_many :armies, :dependent => :destroy
   before_save { email.downcase! }
   before_create :create_remember_token
 
@@ -18,8 +19,43 @@ class User < ActiveRecord::Base
     Digest::SHA1.hexdigest(token.to_s)
   end
 
+    # needs error checking!!!
+=begin
+when no army exists for user_id, monster_id pair -> army count increases
+when army exists "" -> army count stays the same increment monster_amount
+monster_amount is a reasonable number
+=end
+
+  def recruit(monster, army, army_params, num_monsters)
+    new_gold = self.gold - monster.cost
+
+    if new_gold < 0
+      return false
+    end
+
+    self.assign_attributes({ :gold => new_gold })
+
+    if army.nil?
+      army = Army.new(army_params)
+    else
+      new_num_monsters = army.monster_amount + num_monsters
+      army.assign_attributes({ :monster_amount => new_num_monsters })
+    end
+
+    ActiveRecord::Base.transaction do
+      army.save!
+      self.save!(:validate => false)
+    end
+
+    return true
+  end
+
   private
     def create_remember_token
       self.remember_token = User.digest(User.new_remember_token)
+    end
+
+    def default_values
+      self.gold ||= 2000
     end
 end

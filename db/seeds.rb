@@ -11,9 +11,18 @@ f = File.open(File.join(Rails.root, 'db', "monster_seed.xml"))
 doc = Nokogiri::XML(f)
 
 doc.xpath('//monster').map do |i|
-  monster_name = i.xpath('name').inner_text
-  if !Monster.find_by(name: monster_name)
-    Monster.create!(name: monster_name,
-                    flavour_text: i.xpath('flavour_text').inner_text)
+  name = i.xpath('name').inner_text
+  flavour_text = i.xpath('flavour_text').inner_text
+  cost = i.xpath('cost').inner_text
+
+  monster = Monster.find_by(name: name)
+  if !monster
+    Monster.create!(name: name,
+                    flavour_text: flavour_text,
+                    cost: cost)
+  else
+    Monster.update_attributes(name: name,
+                              flavour_text: flavour_text,
+                              cost: cost)
   end
 end
