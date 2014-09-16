@@ -33,7 +33,7 @@ describe "AuthenticationPages" do
       it { should have_link('Users',       href: users_path) }
       it { should have_link('Monster Market', href: monsters_path) }
       
-      it { should have_link('Battle', href: battle_path()) }
+      it { should have_link('Battle') }
       it { should have_link('Army Overview', href: army_path(user)) }
       it { should have_link('Profile',     href: user_path(user)) }
       it { should have_link('Settings',    href: edit_user_path(user)) }
@@ -47,7 +47,7 @@ describe "AuthenticationPages" do
         it { should_not have_link('Settings',    href: edit_user_path(user)) }
         it { should_not have_link('Monster Market', href: monsters_path) }
         it { should_not have_link('Army Overview', href: army_path(user)) }
-        it { should_not have_link('Battle', href: battle_path()) }
+        it { should_not have_link('Battle') }
       end
     end
   end
@@ -124,27 +124,6 @@ describe "AuthenticationPages" do
         specify { expect(response.body).not_to match(full_title('Army Overview')) }
         specify { expect(response).to redirect_to(root_path) }
       end
-
-      describe "submitting a POST request to the Army#recruit action" do
-        before do
-          params = {
-            monster_id: 42,
-            user_id: wrong_user,
-            monster_amount: 5
-          }
-          post :recruit, params
-        end
-
-        specify { expect(response.body).not_to match(full_title('Battle')) }
-        specify { expect(response).to redirect_to(root_path) }
-      end
-
-      describe "submitting a GET request to the Army#battle action" do
-        before { post battle_path() }
-        specify { expect(response.body).not_to match(full_title('Battle')) }
-        specify { expect(response).to redirect_to(root_path) }
-      end
-
     end
 
     describe "as non-admin user" do

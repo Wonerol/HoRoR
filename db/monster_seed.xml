@@ -1,339 +1,729 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <monster_listing>
-
   <monster>
     <name>Peasant</name>
-    <flavour_text>Unless you're a necromancer, peasants are about as useful as the fleas and lice they carry. Still, it's always nice to have a buffer.</flavour_text>
+    <attack>1</attack>
+    <defence>1</defence>
+    <hp>1</hp>
+    <min_damage>1</min_damage>
+    <max_damage>1</max_damage>
+    <speed>2</speed>
     <cost>20</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Archer</name>
-    <flavour_text>Pew pew!</flavour_text>
+    <attack>3</attack>
+    <defence>5</defence>
+    <hp>10</hp>
+    <min_damage>2</min_damage>
+    <max_damage>3</max_damage>
+    <speed>2</speed>
     <cost>150</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Ranger</name>
-    <flavour_text></flavour_text>
+    <attack>4</attack>
+    <defence>5</defence>
+    <hp>10</hp>
+    <min_damage>2</min_damage>
+    <max_damage>3</max_damage>
+    <speed>4</speed>
     <cost>200</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Pikeman</name>
-    <flavour_text></flavour_text>
+    <attack>5</attack>
+    <defence>9</defence>
+    <hp>20</hp>
+    <min_damage>3</min_damage>
+    <max_damage>4</max_damage>
+    <speed>4</speed>
     <cost>200</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Veteran Pikeman</name>
-    <flavour_text></flavour_text>
+    <attack>5</attack>
+    <defence>9</defence>
+    <hp>25</hp>
+    <min_damage>3</min_damage>
+    <max_damage>4</max_damage>
+    <speed>5</speed>
     <cost>250</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Swordsman</name>
-    <flavour_text></flavour_text>
+    <attack>7</attack>
+    <defence>9</defence>
+    <hp>25</hp>
+    <min_damage>4</min_damage>
+    <max_damage>6</max_damage>
+    <speed>4</speed>
     <cost>250</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Master Swordsman</name>
-    <flavour_text>The Master Swordsman laments his dying art form and disappearing way of life. Anyone can pick up a blade and swing it around haphazardly like a peasant. It takes years of practice to gain the finesse needed to wear those blue feathers. </flavour_text>
+    <attack>7</attack>
+    <defence>9</defence>
+    <hp>30</hp>
+    <min_damage>4</min_damage>
+    <max_damage>6</max_damage>
+    <speed>5</speed>
     <cost>300</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Cavalry</name>
-    <flavour_text></flavour_text>
+    <attack>10</attack>
+    <defence>9</defence>
+    <hp>30</hp>
+    <min_damage>5</min_damage>
+    <max_damage>10</max_damage>
+    <speed>6</speed>
     <cost>300</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Champion</name>
-    <flavour_text></flavour_text>
+    <attack>10</attack>
+    <defence>9</defence>
+    <hp>40</hp>
+    <min_damage>5</min_damage>
+    <max_damage>10</max_damage>
+    <speed>7</speed>
     <cost>375</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Paladin</name>
-    <flavour_text></flavour_text>
+    <attack>11</attack>
+    <defence>12</defence>
+    <hp>50</hp>
+    <min_damage>10</min_damage>
+    <max_damage>20</max_damage>
+    <speed>5</speed>
     <cost>600</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Crusader</name>
-    <flavour_text></flavour_text>
+    <attack>11</attack>
+    <defence>12</defence>
+    <hp>65</hp>
+    <min_damage>10</min_damage>
+    <max_damage>20</max_damage>
+    <speed>6</speed>
     <cost>1000</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Goblin</name>
-    <flavour_text></flavour_text>
+    <attack>4</attack>
+    <defence>1</defence>
+    <hp>3</hp>
+    <min_damage>1</min_damage>
+    <max_damage>2</max_damage>
+    <speed>4</speed>
     <cost>40</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Orc</name>
-    <flavour_text></flavour_text>
+    <attack>3</attack>
+    <defence>4</defence>
+    <hp>10</hp>
+    <min_damage>2</min_damage>
+    <max_damage>3</max_damage>
+    <speed>2</speed>
     <cost>140</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Orc Chieftain</name>
-    <flavour_text></flavour_text>
+    <attack>3</attack>
+    <defence>4</defence>
+    <hp>15</hp>
+    <min_damage>3</min_damage>
+    <max_damage>4</max_damage>
+    <speed>3</speed>
     <cost>175</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Wolf</name>
-    <flavour_text></flavour_text>
+    <attack>6</attack>
+    <defence>2</defence>
+    <hp>20</hp>
+    <min_damage>3</min_damage>
+    <max_damage>5</max_damage>
+    <speed>6</speed>
     <cost>200</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Ogre</name>
-    <flavour_text></flavour_text>
+    <attack>9</attack>
+    <defence>5</defence>
+    <hp>40</hp>
+    <min_damage>4</min_damage>
+    <max_damage>6</max_damage>
+    <speed>2</speed>
     <cost>300</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Ogre Lord</name>
-    <flavour_text></flavour_text>
+    <attack>9</attack>
+    <defence>5</defence>
+    <hp>60</hp>
+    <min_damage>5</min_damage>
+    <max_damage>7</max_damage>
+    <speed>4</speed>
     <cost>500</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Troll</name>
-    <flavour_text></flavour_text>
+    <attack>10</attack>
+    <defence>5</defence>
+    <hp>40</hp>
+    <min_damage>5</min_damage>
+    <max_damage>7</max_damage>
+    <speed>4</speed>
     <cost>600</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>War Troll</name>
-    <flavour_text></flavour_text>
+    <attack>10</attack>
+    <defence>5</defence>
+    <hp>40</hp>
+    <min_damage>7</min_damage>
+    <max_damage>9</max_damage>
+    <speed>5</speed>
     <cost>700</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
-    <name>Cyclops</name>
-    <flavour_text></flavour_text>
+    <name>Cyclope</name>
+    <attack>12</attack>
+    <defence>9</defence>
+    <hp>80</hp>
+    <min_damage>12</min_damage>
+    <max_damage>24</max_damage>
+    <speed>5</speed>
     <cost>750</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Sprite</name>
-    <flavour_text></flavour_text>
+    <attack>4</attack>
+    <defence>2</defence>
+    <hp>2</hp>
+    <min_damage>1</min_damage>
+    <max_damage>2</max_damage>
+    <speed>4</speed>
     <cost>50</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Dwarf</name>
-    <flavour_text></flavour_text>
+    <attack>6</attack>
+    <defence>5</defence>
+    <hp>20</hp>
+    <min_damage>2</min_damage>
+    <max_damage>4</max_damage>
+    <speed>2</speed>
     <cost>200</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Battle Dwarf</name>
-    <flavour_text></flavour_text>
+    <attack>6</attack>
+    <defence>6</defence>
+    <hp>20</hp>
+    <min_damage>2</min_damage>
+    <max_damage>4</max_damage>
+    <speed>4</speed>
     <cost>250</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Elf</name>
-    <flavour_text></flavour_text>
+    <attack>4</attack>
+    <defence>3</defence>
+    <hp>15</hp>
+    <min_damage>2</min_damage>
+    <max_damage>3</max_damage>
+    <speed>4</speed>
     <cost>250</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Grand Elf</name>
-    <flavour_text></flavour_text>
+    <attack>5</attack>
+    <defence>5</defence>
+    <hp>15</hp>
+    <min_damage>2</min_damage>
+    <max_damage>3</max_damage>
+    <speed>6</speed>
     <cost>300</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Druid</name>
-    <flavour_text></flavour_text>
+    <attack>7</attack>
+    <defence>5</defence>
+    <hp>20</hp>
+    <min_damage>5</min_damage>
+    <max_damage>8</max_damage>
+    <speed>4</speed>
     <cost>350</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Greater Druid</name>
-    <flavour_text></flavour_text>
+    <attack>7</attack>
+    <defence>7</defence>
+    <hp>25</hp>
+    <min_damage>5</min_damage>
+    <max_damage>8</max_damage>
+    <speed>6</speed>
     <cost>400</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Unicorn</name>
-    <flavour_text></flavour_text>
+    <attack>10</attack>
+    <defence>9</defence>
+    <hp>40</hp>
+    <min_damage>7</min_damage>
+    <max_damage>14</max_damage>
+    <speed>5</speed>
     <cost>500</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Phoenix</name>
-    <flavour_text></flavour_text>
+    <attack>12</attack>
+    <defence>10</defence>
+    <hp>100</hp>
+    <min_damage>20</min_damage>
+    <max_damage>40</max_damage>
+    <speed>7</speed>
     <cost>1500</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Centaur</name>
-    <flavour_text></flavour_text>
+    <attack>3</attack>
+    <defence>1</defence>
+    <hp>5</hp>
+    <min_damage>1</min_damage>
+    <max_damage>2</max_damage>
+    <speed>4</speed>
     <cost>60</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Gargoyle</name>
-    <flavour_text></flavour_text>
+    <attack>4</attack>
+    <defence>7</defence>
+    <hp>15</hp>
+    <min_damage>2</min_damage>
+    <max_damage>3</max_damage>
+    <speed>6</speed>
     <cost>200</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Griffin</name>
-    <flavour_text></flavour_text>
+    <attack>6</attack>
+    <defence>6</defence>
+    <hp>25</hp>
+    <min_damage>3</min_damage>
+    <max_damage>5</max_damage>
+    <speed>4</speed>
     <cost>300</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Minotaur</name>
-    <flavour_text></flavour_text>
+    <attack>9</attack>
+    <defence>8</defence>
+    <hp>40</hp>
+    <min_damage>5</min_damage>
+    <max_damage>10</max_damage>
+    <speed>4</speed>
     <cost>400</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Minotaur King</name>
-    <flavour_text></flavour_text>
+    <attack>9</attack>
+    <defence>8</defence>
+    <hp>45</hp>
+    <min_damage>5</min_damage>
+    <max_damage>10</max_damage>
+    <speed>6</speed>
     <cost>500</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Hydra</name>
-    <flavour_text></flavour_text>
+    <attack>8</attack>
+    <defence>9</defence>
+    <hp>75</hp>
+    <min_damage>6</min_damage>
+    <max_damage>12</max_damage>
+    <speed>2</speed>
     <cost>800</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Green Dragon</name>
-    <flavour_text>This is a dragon who is green with envy, literally. Green Dragon knows Red and Black are stronger. He doesn't need to hear all the generals say Green is just a cheap last resort. The only thing worse than being a weak creature is being the weakest of the strongest, if that makes any sense.</flavour_text>
+    <attack>12</attack>
+    <defence>12</defence>
+    <hp>200</hp>
+    <min_damage>25</min_damage>
+    <max_damage>50</max_damage>
+    <speed>4</speed>
     <cost>3000</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Red Dragon</name>
-    <flavour_text>Red Dragon loves being red. The color is associated with many fine qualities: passion, fire, bloodlust, rage. Red Dragon also loves how his eyes and scales are the exact same shade of red. Enemies and friends alike can't tell if Red's eyes are open, shut, or if they even exist. It's highly amusing.</flavour_text>
+    <attack>13</attack>
+    <defence>13</defence>
+    <hp>250</hp>
+    <min_damage>25</min_damage>
+    <max_damage>50</max_damage>
+    <speed>5</speed>
     <cost>3500</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Black Dragon</name>
-    <flavour_text>It's a tough and lonely life at the top. Black Dragon never wanted to be the strongest kid on the playground, but Black is no pushover either. If someone wants to pick a fight then that's what they'll get. </flavour_text>
+    <attack>14</attack>
+    <defence>14</defence>
+    <hp>300</hp>
+    <min_damage>25</min_damage>
+    <max_damage>50</max_damage>
+    <speed>6</speed>
     <cost>4000</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Halfling</name>
-    <flavour_text>If you've been ridiculed for having achondroplasiaphobia, these halflings can help justify your fears. Their creepy cherubic charm is inversely proportional to their swarming numbers, where they can easily stab or stone a foe to death. David would be proud.</flavour_text>
+    <attack>2</attack>
+    <defence>1</defence>
+    <hp>3</hp>
+    <min_damage>1</min_damage>
+    <max_damage>3</max_damage>
+    <speed>3</speed>
     <cost>50</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Boar</name>
-    <flavour_text>After a millenia of dodging hunting spears and roast spits, boars have evolved into surprisingly fast and agile creatures. Once on the run, a boar's harden skull and tusks can ram anything silly enough to stand in its way to freedom. This is an ideal unit for scouting and company barbeques after a long campaign.</flavour_text>
+    <attack>5</attack>
+    <defence>4</defence>
+    <hp>15</hp>
+    <min_damage>2</min_damage>
+    <max_damage>3</max_damage>
+    <speed>6</speed>
     <cost>150</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Iron Golem</name>
-Poor Iron Golem is always compared to his older brother. No wonder Iron feels so expendable. Steel Golem is stronger, faster, more resilient, and shinier. Who doesn't like shiny things?
-    <flavour_text></flavour_text>
+    <attack>5</attack>
+    <defence>10</defence>
+    <hp>30</hp>
+    <min_damage>4</min_damage>
+    <max_damage>5</max_damage>
+    <speed>2</speed>
     <cost>300</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Steel Golem</name>
-    <flavour_text>Steel Golem is secretly jealous of his younger brother, Iron Golem. Despite being better at everything, Steel has always admired the way Iron's rivets contrast so nicely with his rusty coloring. Steel Golem would scream with frustration... if he had a mouth.</flavour_text>
+    <attack>7</attack>
+    <defence>10</defence>
+    <hp>35</hp>
+    <min_damage>4</min_damage>
+    <max_damage>5</max_damage>
+    <speed>3</speed>
     <cost>350</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Roc</name>
-Rocs are very picky about their portraits. We've received multiple complaints from their Fair Representation Committee, citing this image with "improper scaling in accordance to the grandeur and majesty of the Roc species. Please alter your image so that it is distinguishable from lesser birds of prey. We suggest the addition of a dead minuscule human in the beak." 
-
-Did we mention that rocs are also simultaneously insecure and narcissistic?
-    <flavour_text></flavour_text>
+    <attack>7</attack>
+    <defence>7</defence>
+    <hp>40</hp>
+    <min_damage>5</min_damage>
+    <max_damage>8</max_damage>
+    <speed>4</speed>
     <cost>400</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Mage</name>
-    <flavour_text>It is an unspoken truth that all magi loathe being go-fers for the archmagi. The common mage will spend all day brooding his superior's downfall while tediously crushing unicorn horns with a mortar and pestle. What's so special about silver archmage robes anyway? The red and gold mage robes look MUCH better.</flavour_text>
+    <attack>11</attack>
+    <defence>7</defence>
+    <hp>30</hp>
+    <min_damage>7</min_damage>
+    <max_damage>9</max_damage>
+    <speed>5</speed>
     <cost>500</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Archmage</name>
-    <flavour_text>Whenever an archmage makes mistakes, he will always blame his magi underlings. "I would not go so far to call them my apprentices, for that implies some level of competence. Such a burden it is,  to find good help these days."</flavour_text>
+    <attack>12</attack>
+    <defence>8</defence>
+    <hp>35</hp>
+    <min_damage>7</min_damage>
+    <max_damage>9</max_damage>
+    <speed>6</speed>
     <cost>700</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Giant</name>
-    <flavour_text>Giant was tired of being confused for his conceited cousin Titan, so he decided to try on electric blue to stand out more. The new color worked wonders and Giant hasn't taken it off ever since.</flavour_text>
+    <attack>13</attack>
+    <defence>10</defence>
+    <hp>150</hp>
+    <min_damage>20</min_damage>
+    <max_damage>30</max_damage>
+    <speed>4</speed>
     <cost>2000</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Titan</name>
-    <flavour_text>Titan is a classic brute who likes to talk big and make his stylish blue cousin Giant look small. "I seriously hate black dragons. This one time, I took down 10 dragons with a single lightning bolt. True story."</flavour_text>
+    <attack>15</attack>
+    <defence>15</defence>
+    <hp>300</hp>
+    <min_damage>20</min_damage>
+    <max_damage>30</max_damage>
+    <speed>6</speed>
     <cost>5000</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Skeleton</name>
-    <flavour_text>There's a little skeleton in us all</flavour_text>
+    <attack>4</attack>
+    <defence>3</defence>
+    <hp>4</hp>
+    <min_damage>2</min_damage>
+    <max_damage>3</max_damage>
+    <speed>4</speed>
     <cost>75</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Zombie</name>
-    <flavour_text></flavour_text>
+    <attack>5</attack>
+    <defence>2</defence>
+    <hp>15</hp>
+    <min_damage>2</min_damage>
+    <max_damage>3</max_damage>
+    <speed>2</speed>
     <cost>150</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Mutant Zombie</name>
-    <flavour_text></flavour_text>
+    <attack>5</attack>
+    <defence>2</defence>
+    <hp>20</hp>
+    <min_damage>2</min_damage>
+    <max_damage>3</max_damage>
+    <speed>4</speed>
     <cost>200</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Mummy</name>
-    <flavour_text></flavour_text>
+    <attack>6</attack>
+    <defence>6</defence>
+    <hp>25</hp>
+    <min_damage>3</min_damage>
+    <max_damage>4</max_damage>
+    <speed>4</speed>
     <cost>250</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Royal Mummy</name>
-    <flavour_text></flavour_text>
+    <attack>6</attack>
+    <defence>6</defence>
+    <hp>30</hp>
+    <min_damage>3</min_damage>
+    <max_damage>4</max_damage>
+    <speed>5</speed>
     <cost>300</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Vampire</name>
-    <flavour_text></flavour_text>
+    <attack>8</attack>
+    <defence>6</defence>
+    <hp>35</hp>
+    <min_damage>5</min_damage>
+    <max_damage>7</max_damage>
+    <speed>4</speed>
     <cost>500</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Vampire Lord</name>
-    <flavour_text></flavour_text>
+    <attack>8</attack>
+    <defence>6</defence>
+    <hp>40</hp>
+    <min_damage>5</min_damage>
+    <max_damage>7</max_damage>
+    <speed>5</speed>
     <cost>650</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Lich</name>
-    <flavour_text></flavour_text>
+    <attack>7</attack>
+    <defence>12</defence>
+    <hp>25</hp>
+    <min_damage>8</min_damage>
+    <max_damage>10</max_damage>
+    <speed>5</speed>
     <cost>750</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Power Lich</name>
-    <flavour_text></flavour_text>
+    <attack>7</attack>
+    <defence>13</defence>
+    <hp>35</hp>
+    <min_damage>8</min_damage>
+    <max_damage>10</max_damage>
+    <speed>6</speed>
     <cost>900</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Bone Dragon</name>
-    <flavour_text>Flesh is overrated. Bone Dragon never understood the point of it. Who needs lips when you can show off a menacing yellow grin of death that can demoralize armies? Bone Dragon makes all the other dragons go "HUWHAAA!" in fear. It's worth being brought back to life just to see the looks on their faces.</flavour_text>
+    <attack>11</attack>
+    <defence>9</defence>
+    <hp>150</hp>
+    <min_damage>25</min_damage>
+    <max_damage>45</max_damage>
+    <speed>4</speed>
     <cost>1500</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Rogue</name>
-    <flavour_text>Rogue wears a variety of hats, but none capture his true essence. He is sometimes a thief and sometimes a scoundrel, but never solely one or the other. The only name he closely relates to is "Rogue" - unpredictable and violent. This proves you can't just slap labels on people because not everyone fits nicely in a box.</flavour_text>
+    <attack>6</attack>
+    <defence>1</defence>
+    <hp>4</hp>
+    <min_damage>1</min_damage>
+    <max_damage>2</max_damage>
+    <speed>5</speed>
     <cost>50</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Nomad</name>
-    <flavour_text>Nomads are great for reconnaissance. For a price they will go out, wander around like nomads do, kill whatever is in the way, then come back and tell you everything they saw. They're like talking boomerangs with swords.</flavour_text>
+    <attack>7</attack>
+    <defence>5</defence>
+    <hp>20</hp>
+    <min_damage>2</min_damage>
+    <max_damage>5</max_damage>
+    <speed>6</speed>
     <cost>200</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Ghost</name>
-    <flavour_text></flavour_text>
+    <attack>8</attack>
+    <defence>6</defence>
+    <hp>20</hp>
+    <min_damage>4</min_damage>
+    <max_damage>6</max_damage>
+    <speed>5</speed>
     <cost>1000</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Medusa</name>
-    <flavour_text></flavour_text>
+    <attack>8</attack>
+    <defence>9</defence>
+    <hp>35</hp>
+    <min_damage>6</min_damage>
+    <max_damage>10</max_damage>
+    <speed>4</speed>
     <cost>350</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Genie</name>
-    <flavour_text></flavour_text>
+    <attack>10</attack>
+    <defence>9</defence>
+    <hp>50</hp>
+    <min_damage>20</min_damage>
+    <max_damage>30</max_damage>
+    <speed>6</speed>
     <cost>750</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Earth Elemental</name>
-    <flavour_text></flavour_text>
+    <attack>8</attack>
+    <defence>8</defence>
+    <hp>50</hp>
+    <min_damage>4</min_damage>
+    <max_damage>5</max_damage>
+    <speed>3</speed>
     <cost>500</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Water Elemental</name>
-    <flavour_text></flavour_text>
+    <attack>6</attack>
+    <defence>8</defence>
+    <hp>45</hp>
+    <min_damage>3</min_damage>
+    <max_damage>7</max_damage>
+    <speed>4</speed>
     <cost>500</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Fire Elemental</name>
-    <flavour_text></flavour_text>
+    <attack>8</attack>
+    <defence>6</defence>
+    <hp>40</hp>
+    <min_damage>4</min_damage>
+    <max_damage>5</max_damage>
+    <speed>5</speed>
     <cost>500</cost>
+    <flavour_text></flavour_text>
   </monster>
   <monster>
     <name>Air Elemental</name>
-    <flavour_text></flavour_text>
+    <attack>7</attack>
+    <defence>7</defence>
+    <hp>35</hp>
+    <min_damage>2</min_damage>
+    <max_damage>8</max_damage>
+    <speed>6</speed>
     <cost>500</cost>
+    <flavour_text></flavour_text>
   </monster>
-
 </monster_listing>

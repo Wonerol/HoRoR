@@ -1,7 +1,22 @@
 <% provide(:title, "Battle") %>
 
-<h1>You went looking for trouble</h1>
-<h1>You found some</h1>
+<% if !@battle_report.nil? %>
+  REPORTING IN!
+  <% for battle in @battle_report %>
+    <p><%= "#{battle[:side]} attacked with #{battle[:a_monster_name]} and killed #{battle[:casualties]} #{battle[:d_monster_name]}" %></p>
+  <% end %>
+<% end %>
+
+<!-- tease all these conditionals out into a helper -->
+<% if @victory %>
+  <h1>You are victorious!</h1>
+  <h1>You liberate <%= "#{ @gold_prize }" %> gold from the enemy!</h1>
+<% elsif @defeat %>
+  <h1>You have failed</h1>
+<% else %>
+  <h1>You went looking for trouble</h1>
+  <h1>You found some</h1>
+<% end %>
 
 <!-- ... -->
 <table>
@@ -13,7 +28,9 @@
       </table>
 
       <tr>
+        <% if !@victory && !@defeat %>
         <h1>VS</h1>
+        <% end %>
       </tr>
 
   <tr>
@@ -26,6 +43,7 @@
 
 </table>
 
-<%= link_to "Flee", army_path(current_user) %>
-
-<%= button_to 'Attack!', { controller: "armies", action: "battle", user_id: current_user.id, attack: true } , method: :post %>
+<% if !@victory && !@defeat %>
+  <%= link_to "Flee", army_path(current_user) %>
+  <%= button_to 'Attack!', { controller: "armies", action: "battle", user_id: current_user.id, attack: true } , method: :post %>
+<% end %>
