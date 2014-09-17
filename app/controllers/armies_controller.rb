@@ -105,7 +105,7 @@ class ArmiesController < ApplicationController
       enemy_army = Array.new
       5.times do
         monster_id = Monster.offset(rand(Monster.count)).first.id
-        monster_amount = rand(1) + 1
+        monster_amount = rand(3) + 1
         e_stack = Army.new(user_id: current_user.id,
                           monster_id: monster_id,
                           monster_amount: monster_amount,
@@ -183,10 +183,10 @@ class ArmiesController < ApplicationController
 
         # calculate damage
         unit_damage = calc_damage(attacking_monster, defending_monster)
-        total_damage = (unit_damage * attacking_stack.monster_amount) + defending_monster.residual_dmg
+        pre_residual_dmg = unit_damage * attacking_stack.monster_amount
+        total_damage = pre_residual_dmg + defending_stack.residual_dmg
 
         # determine casualties
-        # either kills or doesn't, no reduced HP
         casualties = 0
         residual_dmg = 0
         if total_damage > 0
@@ -202,7 +202,7 @@ class ArmiesController < ApplicationController
         cur_report[:casualties] = casualties
         cur_report[:d_monster_name] = defending_monster.name
         cur_report[:a_monster_name] = attacking_monster.name
-        cur_report[:damage] = total_damage
+        cur_report[:damage] = pre_residual_dmg
 
         # update the defender's army
         if new_num_monsters <= 0
@@ -215,6 +215,7 @@ class ArmiesController < ApplicationController
         else
           defending_stack.assign_attributes({ :monster_amount => new_num_monsters, :residual_dmg => residual_dmg })
           defending_stack.save()
+          defending_stack.reload()
         end
 
         pending_stacks.delete(attacking_stack)
