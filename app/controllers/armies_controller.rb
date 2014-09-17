@@ -183,7 +183,7 @@ class ArmiesController < ApplicationController
 
         # calculate damage
         unit_damage = calc_damage(attacking_monster, defending_monster)
-        total_damage = unit_damage * attacking_stack.monster_amount
+        total_damage = (unit_damage * attacking_stack.monster_amount) + defending_monster.residual_dmg
 
         # determine casualties
         # either kills or doesn't, no reduced HP
