@@ -8,7 +8,6 @@ Rails.application.routes.draw do
   root 'static_pages#home'
 
   match '/battle', to: 'armies#battle', via: 'post'
-  # armies/:id actually uses User id This seems... suboptimal
   match '/armies/', to: 'armies#show', via: 'get'
   match '/recruit', to: 'armies#recruit', via: 'post'
   match '/signup', to: 'users#new', via: 'get'

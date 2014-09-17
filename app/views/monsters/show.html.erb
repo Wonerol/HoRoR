@@ -1,22 +1,51 @@
 <% provide(:title, @monster.name) %>
 
 <h1><%= @monster.name %></h1>
+<br>
 
-<%= image_tag(image_path_for(@monster), alt: "(picture of #{@monster.name})") %>
+<style>
+  table {
+    border-style:solid;
+  }
+  tr {
+    border-style:solid;
+  }
+  td {
+    border-style:solid;
+    padding:9px;
+    text-align:center;
+  }
+</style>
 
-<p><%= pluralize(@monster.cost, "gold piece") %><p>
+<%= image_tag(image_path_for(@monster), alt: "(picture of #{@monster.name})", style: "float:left") %>
+
+<table>
+  <tr>
+    <td><b>Attack</b></td>
+    <td><b>Defence</b></td>
+    <td><b>HP</b></td>
+    <td><b>Damage</b></td>
+    <td><b>Speed</b></td>
+  </tr>
+  <tr>
+    <td><%= @monster.attack %></td>
+    <td><%= @monster.defence %></td>
+    <td><%= @monster.hp %></td>
+  <td>
+  <% if @monster.min_damage == @monster.max_damage %>
+    <%= @monster.min_damage %>
+  <% else %>
+    <%= "#{@monster.min_damage} - #{@monster.max_damage}" %>
+  <% end %>
+  </td>
+    <td><%= @monster.speed %></td>
+  </tr>
+</table>
+
+<br>
 <p><i><%= @monster.flavour_text %></i><p>
 
-<p>Attack : <%= @monster.attack %><p>
-<p>Defence : <%= @monster.defence %><p>
-<p>HP : <%= @monster.hp %><p>
-
-<% if @monster.min_damage == @monster.max_damage %>
-  <p>Damage : <%= @monster.min_damage %><p>
-<% else %>
-  <p>Damage : <%= "#{@monster.min_damage} - #{@monster.max_damage}" %><p>
-<% end %>
-
-<p>Speed : <%= @monster.speed %><p>
+<br>
+<p style="float:left"><%= pluralize(@monster.cost, "gold piece") %></p>
 
 <%= button_to 'Recruit', { controller: "armies", action: "recruit", monster_id: @monster.id, user_id: current_user.id, monster_amount: 1 } , method: :post %>

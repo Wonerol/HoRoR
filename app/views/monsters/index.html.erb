@@ -1,6 +1,10 @@
-<% provide(:title, 'Monster Market') %>
-<h1>Monster Market</h1>
-<p>Welcome to the market!</p>
+<% provide(:title, 'Mercenary Market') %>
+<h1>Mercenary Market</h1>
+
+<%= form_tag(params, :method => :get) do %>
+  sort by:
+  <%= select_tag(:monster_order, options_for_select(@sort_options, params[:monster_order]), onchange: "this.form.submit()", style: "width:150px") %>
+<%end%>
 
 <%= will_paginate %>
 

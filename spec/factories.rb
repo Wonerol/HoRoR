@@ -13,7 +13,13 @@ FactoryGirl.define do
   factory :monster do
     sequence(:name) { |n| "Monster #{n}" }
     flavour_text "It's been a tough year for monster mercenaries"
-    cost 10
+    attack 1
+    defence 1
+    min_damage 1
+    max_damage 1
+    hp 1
+    speed 1
+    cost 42
   end
 
   factory :army do

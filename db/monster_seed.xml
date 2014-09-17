@@ -143,7 +143,7 @@ After years of learning the noble art of caped swordfighting, these advanced Pal
     <max_damage>3</max_damage>
     <speed>2</speed>
     <cost>140</cost>
-    <flavour_text>A corrupted Elf mutated by dark powers, or a shaved boar dressed like Elf? You decide. 
+    <flavour_text>A corrupted Elf mutated by dark powers, or a shaved boar dressed like an Elf? You decide. 
 
 (But for this price, who cares?)</flavour_text>
   </monster>
@@ -156,7 +156,7 @@ After years of learning the noble art of caped swordfighting, these advanced Pal
     <max_damage>4</max_damage>
     <speed>3</speed>
     <cost>175</cost>
-    <flavour_text>Any Orc left standing at the end of the year is promoted to Chieftain.</flavour_text>
+    <flavour_text>Any Orc still alive at the end of the year is promoted to Chieftain.</flavour_text>
   </monster>
   <monster>
     <name>Wolf</name>
@@ -321,7 +321,7 @@ After years of learning the noble art of caped swordfighting, these advanced Pal
     <max_damage>40</max_damage>
     <speed>7</speed>
     <cost>1500</cost>
-    <flavour_text>Phoenix is the sure-fire solution to your tactic problems. </flavour_text>
+    <flavour_text>Phoenix is the sure-fire solution to your tactical problems. </flavour_text>
   </monster>
   <monster>
     <name>Centaur</name>
@@ -332,7 +332,7 @@ After years of learning the noble art of caped swordfighting, these advanced Pal
     <max_damage>2</max_damage>
     <speed>4</speed>
     <cost>60</cost>
-    <flavour_text>Despite their mythical reputation, Centaurs aren't the best shooters. They spend too much time horsing around.</flavour_text>
+    <flavour_text>Centaurs would be better archers if they weren't always horsing around.</flavour_text>
   </monster>
   <monster>
     <name>Gargoyle</name>
@@ -354,9 +354,8 @@ After years of learning the noble art of caped swordfighting, these advanced Pal
     <max_damage>5</max_damage>
     <speed>4</speed>
     <cost>300</cost>
-    <flavour_text>Although Griffins never tire, they like pretending to catnap during battle lulls. They find it hilarious when the generals start to panic.
-
-When not in battle, Griffins can spend all day preening feathers or grooming their tail.</flavour_text>
+    <flavour_text>
+When not in battle, Griffins spend their day preening feathers or grooming their tail.</flavour_text>
   </monster>
   <monster>
     <name>Minotaur</name>
@@ -367,7 +366,7 @@ When not in battle, Griffins can spend all day preening feathers or grooming the
     <max_damage>10</max_damage>
     <speed>4</speed>
     <cost>400</cost>
-    <flavour_text>A Minotaur will be called bull-headed at some point in his life. Most people would take offense, but Minotaurs never hear it as an insult because... Well, it's true!</flavour_text>
+    <flavour_text>A Minotaur will be called bull-headed at some point in his life. This is usually followed by the end of someone else's</flavour_text>
   </monster>
   <monster>
     <name>Minotaur King</name>
@@ -378,7 +377,7 @@ When not in battle, Griffins can spend all day preening feathers or grooming the
     <max_damage>10</max_damage>
     <speed>6</speed>
     <cost>500</cost>
-    <flavour_text>Many assume Minotaurs snort because of bullish instinct. It's actually due to irritation from their nose rings. The piercings look a-MAZE-ing, but even a Minotaur King will eventually have to sneeze.</flavour_text>
+    <flavour_text>The piercings look a-MAZE-ing, but even a Minotaur King has to sneeze sometime.</flavour_text>
   </monster>
   <monster>
     <name>Hydra</name>
@@ -400,7 +399,7 @@ When not in battle, Griffins can spend all day preening feathers or grooming the
     <max_damage>50</max_damage>
     <speed>4</speed>
     <cost>3000</cost>
-    <flavour_text>This is a dragon who is literally green with envy. Green Dragon knows Red and Black are stronger. He doesn't need to hear all the generals say Green is just a cheap last resort. The only thing worse than being a weak creature is being the weakest of the strongest, if that makes any sense.</flavour_text>
+    <flavour_text>This is a dragon who is literally green with envy. Green Dragon knows Red and Black are stronger. He doesn't need to hear all the generals say Green is the poor man's Red. The only thing worse than being a weak creature is being the weakest of the strongest, if that makes any sense.</flavour_text>
   </monster>
   <monster>
     <name>Red Dragon</name>
@@ -411,7 +410,7 @@ When not in battle, Griffins can spend all day preening feathers or grooming the
     <max_damage>50</max_damage>
     <speed>5</speed>
     <cost>3500</cost>
-    <flavour_text>Red Dragon loves being red. The color is associated with many fine qualities: passion, fire, bloodlust, rage. Red Dragon also loves how his eyes and scales are the exact same shade of red. Enemies and friends alike can't tell if Red's eyes are open, shut, or if they even exist. It's highly amusing.</flavour_text>
+    <flavour_text>The colour of passion, fire, bloodlust, and rage, Red Dragon brings all these qualities to the battlefield.</flavour_text>
   </monster>
   <monster>
     <name>Black Dragon</name>
@@ -422,7 +421,7 @@ When not in battle, Griffins can spend all day preening feathers or grooming the
     <max_damage>50</max_damage>
     <speed>6</speed>
     <cost>4000</cost>
-    <flavour_text>It's a tough and lonely life at the top. Everyone wants to fight you and no one wants to be your friend. Black Dragon never wanted to be the strongest kid on the playground, but Black is no pushover either. If someone wants to pick a fight then that's what they'll get. </flavour_text>
+    <flavour_text>It's a tough and lonely life at the top. Everyone wants to take your throne and no one wants to be your friend. Black Dragon never wanted to be the strongest kid on the playground, but Black is no pushover either. If someone wants to pick a fight then that's what they'll get.</flavour_text>
   </monster>
   <monster>
     <name>Halfling</name>
@@ -478,9 +477,8 @@ When not in battle, Griffins can spend all day preening feathers or grooming the
     <max_damage>8</max_damage>
     <speed>4</speed>
     <cost>400</cost>
-    <flavour_text>Rocs are very picky about their portraits. We've received multiple complaints from their Fair Representation Committee, citing this image with "improper scaling in accordance to the grandeur and majesty of the Roc species. Please alter your image so that it is distinguishable from lesser birds of prey. We suggest the addition of a dead minuscule human in the beak." 
-
-Did we mention that rocs are also simultaneously insecure and narcissistic?</flavour_text>
+    <flavour_text>Rocs are very picky about their portraits. We've received multiple complaints from their Fair Representation Committee, citing this image with "improper scaling in accordance to the grandeur and majesty of the Roc species. Please alter your image so that it is distinguishable from lesser birds of prey. We suggest the addition of a dead minuscule human in the beak."
+</flavour_text>
   </monster>
   <monster>
     <name>Mage</name>
@@ -513,7 +511,7 @@ Did we mention that rocs are also simultaneously insecure and narcissistic?</fla
     <max_damage>30</max_damage>
     <speed>4</speed>
     <cost>2000</cost>
-    <flavour_text>Giant was tired of being confused for his conceited cousin Titan, so he decided to try on electric blue to stand out more. The new color worked wonders and Giant hasn't taken it off ever since.</flavour_text>
+    <flavour_text>Giant was tired of being confused for his conceited cousin Titan, so he decided to try on electric blue to stand out more. The new color worked wonders and Giant hasn't taken it off since.</flavour_text>
   </monster>
   <monster>
     <name>Titan</name>

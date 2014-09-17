@@ -31,7 +31,7 @@ describe "AuthenticationPages" do
 
       it { should have_title(user.name) }
       it { should have_link('Users',       href: users_path) }
-      it { should have_link('Monster Market', href: monsters_path) }
+      it { should have_link('Mercenary Market', href: monsters_path) }
       
       it { should have_link('Battle') }
       it { should have_link('Army Overview', href: army_path(user)) }
@@ -45,7 +45,7 @@ describe "AuthenticationPages" do
         it { should have_link('Sign in') }
         it { should_not have_link('Profile',     href: user_path(user)) }
         it { should_not have_link('Settings',    href: edit_user_path(user)) }
-        it { should_not have_link('Monster Market', href: monsters_path) }
+        it { should_not have_link('Mercenary Market', href: monsters_path) }
         it { should_not have_link('Army Overview', href: army_path(user)) }
         it { should_not have_link('Battle') }
       end

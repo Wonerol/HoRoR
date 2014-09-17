@@ -27,7 +27,11 @@ monster_amount is a reasonable number
 =end
 
   def recruit(monster, army, army_params, num_monsters)
-    new_gold = self.gold - monster.cost
+    if num_monsters <= 0
+      return false
+    end
+
+    new_gold = self.gold - (monster.cost * num_monsters)
 
     if new_gold < 0
       return false
