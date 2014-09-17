@@ -23,5 +23,7 @@ module HoRoR
 
     # Custom directories with classes and modules you want to be autoloadable.
     config.autoload_paths += Dir["#{config.root}/lib/**/"]
+
+    config.serve_static_assets = true
   end
 end
