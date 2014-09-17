@@ -3,7 +3,7 @@
 <% if !@battle_report.nil? %>
   REPORTING IN!
   <% for battle in @battle_report %>
-    <p><%= "#{battle[:side]} attacked with #{battle[:a_monster_name]} and killed #{battle[:casualties]} #{battle[:d_monster_name]}" %></p>
+    <p><%= "#{battle[:side]} attacked with #{battle[:a_monster_name]}, did #{battle[:damage]} and killed #{battle[:casualties]} #{battle[:d_monster_name]}" %></p>
   <% end %>
 <% end %>
 

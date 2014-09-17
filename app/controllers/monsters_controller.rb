@@ -4,7 +4,7 @@ class MonstersController < ApplicationController
   before_action :signed_in_user, only: [:index, :show]
 
   def index
-    @monsters = Monster.paginate(page: params[:page])
+    @monsters = Monster.reorder("name ASC").paginate(page: params[:page])
   end
 
   def show

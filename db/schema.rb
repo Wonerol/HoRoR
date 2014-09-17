@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140916025144) do
+ActiveRecord::Schema.define(version: 20140917021558) do
 
   create_table "armies", force: true do |t|
     t.integer  "monster_id"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20140916025144) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "ai_controlled"
+    t.integer  "residual_dmg"
   end
 
   create_table "monsters", force: true do |t|
@@ -28,6 +29,12 @@ ActiveRecord::Schema.define(version: 20140916025144) do
     t.datetime "updated_at"
     t.text     "flavour_text", limit: 255
     t.integer  "cost"
+    t.integer  "attack"
+    t.integer  "defence"
+    t.integer  "hp"
+    t.integer  "min_damage"
+    t.integer  "max_damage"
+    t.integer  "speed"
   end
 
   add_index "monsters", ["name"], name: "index_monsters_on_name", unique: true

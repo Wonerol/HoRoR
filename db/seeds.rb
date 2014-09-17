@@ -14,15 +14,33 @@ doc.xpath('//monster').map do |i|
   name = i.xpath('name').inner_text
   flavour_text = i.xpath('flavour_text').inner_text
   cost = i.xpath('cost').inner_text
+  attack = i.xpath('attack').inner_text
+  defence = i.xpath('defence').inner_text
+  hp = i.xpath('hp').inner_text
+  min_damage = i.xpath('min_damage').inner_text
+  max_damage = i.xpath('max_damage').inner_text
+  speed = i.xpath('speed').inner_text
 
   monster = Monster.find_by(name: name)
   if !monster
     Monster.create!(name: name,
                     flavour_text: flavour_text,
-                    cost: cost)
+                    cost: cost,
+                    attack: attack,
+                    defence: defence,
+                    hp: hp,
+                    min_damage: min_damage,
+                    max_damage: max_damage,
+                    speed: speed)
   else
     Monster.update_attributes(name: name,
                               flavour_text: flavour_text,
-                              cost: cost)
+                              cost: cost,
+                              attack: attack,
+                              defence: defence,
+                              hp: hp,
+                              min_damage: min_damage,
+                              max_damage: max_damage,
+                              speed: speed)
   end
 end

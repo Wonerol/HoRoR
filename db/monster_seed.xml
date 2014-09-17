@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <monster_listing>
   <monster>
     <name>Peasant</name>
@@ -9,7 +9,7 @@
     <max_damage>1</max_damage>
     <speed>2</speed>
     <cost>20</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Unless you're a necromancer, peasants are about as useful as the fleas and lice they carry. Still, it's always nice to have a buffer.</flavour_text>
   </monster>
   <monster>
     <name>Archer</name>
@@ -20,7 +20,7 @@
     <max_damage>3</max_damage>
     <speed>2</speed>
     <cost>150</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>It's a man's battlefield for the new Archer recruit. Neither Medusa nor the sprites offer much female camaraderie, and the Trolls... Well, no one is really sure what they are.</flavour_text>
   </monster>
   <monster>
     <name>Ranger</name>
@@ -31,7 +31,7 @@
     <max_damage>3</max_damage>
     <speed>4</speed>
     <cost>200</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>When deployed effectively, a troop of Rangers can pin down a variety of air-borne enemies with cobalt blue flair. Yeah, dragons. Even you.</flavour_text>
   </monster>
   <monster>
     <name>Pikeman</name>
@@ -42,7 +42,7 @@
     <max_damage>4</max_damage>
     <speed>4</speed>
     <cost>200</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Pikemen are definitely the most chatty troop. It's inevitable when the job is to stand still and hope your pike doesn't break during the next attack. A pikeman will strike up a conversation with the soldier next to him to break the silence. Then the pikeman behind him will chime in, and soon the first and second ranks will be exchanging war stories and pike puns.</flavour_text>
   </monster>
   <monster>
     <name>Veteran Pikeman</name>
@@ -53,7 +53,7 @@
     <max_damage>4</max_damage>
     <speed>5</speed>
     <cost>250</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>The Veteran Pikemen are tight-lipped compared to their novice days. You would think it was because they've seen gruesome and mentally scarring things on the front lines. No, these veterans are silently sulking because they didn't get proper helmets this year. "A couple of feathers won't magically turn this hat into a full helmet. Ridiculous!"</flavour_text>
   </monster>
   <monster>
     <name>Swordsman</name>
@@ -64,7 +64,7 @@
     <max_damage>6</max_damage>
     <speed>4</speed>
     <cost>250</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>"No offense to the pikemen, but standing around and holding position sounds super boring. Running around and hacking things is where the party's at!"</flavour_text>
   </monster>
   <monster>
     <name>Master Swordsman</name>
@@ -75,7 +75,7 @@
     <max_damage>6</max_damage>
     <speed>5</speed>
     <cost>300</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>The Master Swordsman laments his dying art form and disappearing way of life. Anyone can pick up a blade and swing it around haphazardly like a peasant. It takes years of practice to gain the finesse needed to wear those blue feathers.</flavour_text>
   </monster>
   <monster>
     <name>Cavalry</name>
@@ -86,7 +86,7 @@
     <max_damage>10</max_damage>
     <speed>6</speed>
     <cost>300</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Calvary is a hill where the Romans crucified prisoners. It was also the site of-- What? Cavalry? Oh, oh. Right. Cavalry are mounted units.</flavour_text>
   </monster>
   <monster>
     <name>Champion</name>
@@ -97,7 +97,7 @@
     <max_damage>10</max_damage>
     <speed>7</speed>
     <cost>375</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Champions have good reason to be smug. As heroes of the land, they always get the best horses and the curliest blue plumage.</flavour_text>
   </monster>
   <monster>
     <name>Paladin</name>
@@ -108,7 +108,7 @@
     <max_damage>20</max_damage>
     <speed>5</speed>
     <cost>600</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Paladins spend most of their training untangling themselves from their new capes. Very unknightly indeed. Paladins can spend up to a year or more learning how to avoid slicing their cape to shreads.</flavour_text>
   </monster>
   <monster>
     <name>Crusader</name>
@@ -119,7 +119,9 @@
     <max_damage>20</max_damage>
     <speed>6</speed>
     <cost>1000</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Fighting in the name of justice and whichever army pays them the most!
+
+After years of learning the noble art of caped swordfighting, these advanced Paladins have become Crusaders! Their new golden armor and cape prowess have heightened their sense of self-righteousness, making Crusaders twice as annoying to kill.</flavour_text>
   </monster>
   <monster>
     <name>Goblin</name>
@@ -130,7 +132,7 @@
     <max_damage>2</max_damage>
     <speed>4</speed>
     <cost>40</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Goblins may look fierce with their spiky sticks, but fighting is just a day job. Their true passion is jewelry making. Goblins love to spend their free time polishing their bejeweled headdresses or fashioning gold anklets for a special someone.</flavour_text>
   </monster>
   <monster>
     <name>Orc</name>
@@ -141,7 +143,9 @@
     <max_damage>3</max_damage>
     <speed>2</speed>
     <cost>140</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>A corrupted Elf mutated by dark powers, or a shaved boar dressed like Elf? You decide. 
+
+(But for this price, who cares?)</flavour_text>
   </monster>
   <monster>
     <name>Orc Chieftain</name>
@@ -152,7 +156,7 @@
     <max_damage>4</max_damage>
     <speed>3</speed>
     <cost>175</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Any Orc left standing at the end of the year is promoted to Chieftain.</flavour_text>
   </monster>
   <monster>
     <name>Wolf</name>
@@ -163,7 +167,7 @@
     <max_damage>5</max_damage>
     <speed>6</speed>
     <cost>200</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>You'll never see these wolves in sheep's clothing. They're great on the attack but know nothing about defense. They also don't understand the commands for sit, stay, or heel.</flavour_text>
   </monster>
   <monster>
     <name>Ogre</name>
@@ -174,7 +178,7 @@
     <max_damage>6</max_damage>
     <speed>2</speed>
     <cost>300</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Ogre really wished he had a talking donkey to be his best friend. Sigh.</flavour_text>
   </monster>
   <monster>
     <name>Ogre Lord</name>
@@ -185,7 +189,7 @@
     <max_damage>7</max_damage>
     <speed>4</speed>
     <cost>500</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Although Ogre Lord has accomplished much in his life, killing and pillaging cannot fill the void left by his parents. Who were they? Ram? Monkey? Ape? Giant human? Where did he come from? Why is he here? So lost and confused. </flavour_text>
   </monster>
   <monster>
     <name>Troll</name>
@@ -196,7 +200,7 @@
     <max_damage>7</max_damage>
     <speed>4</speed>
     <cost>600</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Real Trolls throw rocks, not insults.</flavour_text>
   </monster>
   <monster>
     <name>War Troll</name>
@@ -207,10 +211,10 @@
     <max_damage>9</max_damage>
     <speed>5</speed>
     <cost>700</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Trolling before it was cool.</flavour_text>
   </monster>
   <monster>
-    <name>Cyclope</name>
+    <name>Cyclops</name>
     <attack>12</attack>
     <defence>9</defence>
     <hp>80</hp>
@@ -218,7 +222,7 @@
     <max_damage>24</max_damage>
     <speed>5</speed>
     <cost>750</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Cyclops is saving up money to make proper single lens sunglasses. Recruit?</flavour_text>
   </monster>
   <monster>
     <name>Sprite</name>
@@ -229,7 +233,7 @@
     <max_damage>2</max_damage>
     <speed>4</speed>
     <cost>50</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Full of spite, they're a hot mess just waiting to bless a fight.</flavour_text>
   </monster>
   <monster>
     <name>Dwarf</name>
@@ -240,7 +244,7 @@
     <max_damage>4</max_damage>
     <speed>2</speed>
     <cost>200</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>"No, I don't know Snow White."</flavour_text>
   </monster>
   <monster>
     <name>Battle Dwarf</name>
@@ -251,7 +255,7 @@
     <max_damage>4</max_damage>
     <speed>4</speed>
     <cost>250</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>He adores the new Hobbit movies, but thinks they should be called "The Battle Dwarves" instead. </flavour_text>
   </monster>
   <monster>
     <name>Elf</name>
@@ -262,7 +266,7 @@
     <max_damage>3</max_damage>
     <speed>4</speed>
     <cost>250</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>"Everyone keeps calling me Peter Pan. Who is this guy?"</flavour_text>
   </monster>
   <monster>
     <name>Grand Elf</name>
@@ -273,7 +277,7 @@
     <max_damage>3</max_damage>
     <speed>6</speed>
     <cost>300</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Earning the title "Grand Elf" is really just another feather in his cap.</flavour_text>
   </monster>
   <monster>
     <name>Druid</name>
@@ -284,7 +288,7 @@
     <max_damage>8</max_damage>
     <speed>4</speed>
     <cost>350</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>"The real reason I became a Druid? The hood makes me look cool." </flavour_text>
   </monster>
   <monster>
     <name>Greater Druid</name>
@@ -295,7 +299,7 @@
     <max_damage>8</max_damage>
     <speed>6</speed>
     <cost>400</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Greater Druids love their job, mainly because no one knows what they actually do.</flavour_text>
   </monster>
   <monster>
     <name>Unicorn</name>
@@ -306,7 +310,7 @@
     <max_damage>14</max_damage>
     <speed>5</speed>
     <cost>500</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>He isn't your average prance-in-a-rainbow-forest variety of magical creature. This particular Unicorn's favorite pastime is blinding foes with sparkles before gouging their eyes out with his horn. </flavour_text>
   </monster>
   <monster>
     <name>Phoenix</name>
@@ -317,7 +321,7 @@
     <max_damage>40</max_damage>
     <speed>7</speed>
     <cost>1500</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Phoenix is the sure-fire solution to your tactic problems. </flavour_text>
   </monster>
   <monster>
     <name>Centaur</name>
@@ -328,7 +332,7 @@
     <max_damage>2</max_damage>
     <speed>4</speed>
     <cost>60</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Despite their mythical reputation, Centaurs aren't the best shooters. They spend too much time horsing around.</flavour_text>
   </monster>
   <monster>
     <name>Gargoyle</name>
@@ -339,7 +343,7 @@
     <max_damage>3</max_damage>
     <speed>6</speed>
     <cost>200</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Gargoyle always has a rather forlorn expression. The story goes that Gargoyle tried to ask Medusa out, but she turned him down and froze his reaction permanently on his face.</flavour_text>
   </monster>
   <monster>
     <name>Griffin</name>
@@ -350,7 +354,9 @@
     <max_damage>5</max_damage>
     <speed>4</speed>
     <cost>300</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Although Griffins never tire, they like pretending to catnap during battle lulls. They find it hilarious when the generals start to panic.
+
+When not in battle, Griffins can spend all day preening feathers or grooming their tail.</flavour_text>
   </monster>
   <monster>
     <name>Minotaur</name>
@@ -361,7 +367,7 @@
     <max_damage>10</max_damage>
     <speed>4</speed>
     <cost>400</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>A Minotaur will be called bull-headed at some point in his life. Most people would take offense, but Minotaurs never hear it as an insult because... Well, it's true!</flavour_text>
   </monster>
   <monster>
     <name>Minotaur King</name>
@@ -372,7 +378,7 @@
     <max_damage>10</max_damage>
     <speed>6</speed>
     <cost>500</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Many assume Minotaurs snort because of bullish instinct. It's actually due to irritation from their nose rings. The piercings look a-MAZE-ing, but even a Minotaur King will eventually have to sneeze.</flavour_text>
   </monster>
   <monster>
     <name>Hydra</name>
@@ -383,7 +389,7 @@
     <max_damage>12</max_damage>
     <speed>2</speed>
     <cost>800</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Five heads are better than one!</flavour_text>
   </monster>
   <monster>
     <name>Green Dragon</name>
@@ -394,7 +400,7 @@
     <max_damage>50</max_damage>
     <speed>4</speed>
     <cost>3000</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>This is a dragon who is literally green with envy. Green Dragon knows Red and Black are stronger. He doesn't need to hear all the generals say Green is just a cheap last resort. The only thing worse than being a weak creature is being the weakest of the strongest, if that makes any sense.</flavour_text>
   </monster>
   <monster>
     <name>Red Dragon</name>
@@ -405,7 +411,7 @@
     <max_damage>50</max_damage>
     <speed>5</speed>
     <cost>3500</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Red Dragon loves being red. The color is associated with many fine qualities: passion, fire, bloodlust, rage. Red Dragon also loves how his eyes and scales are the exact same shade of red. Enemies and friends alike can't tell if Red's eyes are open, shut, or if they even exist. It's highly amusing.</flavour_text>
   </monster>
   <monster>
     <name>Black Dragon</name>
@@ -416,7 +422,7 @@
     <max_damage>50</max_damage>
     <speed>6</speed>
     <cost>4000</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>It's a tough and lonely life at the top. Everyone wants to fight you and no one wants to be your friend. Black Dragon never wanted to be the strongest kid on the playground, but Black is no pushover either. If someone wants to pick a fight then that's what they'll get. </flavour_text>
   </monster>
   <monster>
     <name>Halfling</name>
@@ -427,7 +433,7 @@
     <max_damage>3</max_damage>
     <speed>3</speed>
     <cost>50</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>If you've been ridiculed for having achondroplasiaphobia, these halflings can help justify your fears. Their creepy cherubic charm is inversely proportional to their swarming numbers, where they can easily stone a foe to death. David would be proud. </flavour_text>
   </monster>
   <monster>
     <name>Boar</name>
@@ -438,7 +444,7 @@
     <max_damage>3</max_damage>
     <speed>6</speed>
     <cost>150</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>After a millenia of dodging hunting spears and roast spits, boars have evolved into surprisingly fast and agile creatures. Once on the run, a boar's harden skull and tusks can ram anything silly enough to stand in its way to freedom. This is an ideal unit for scouting and company barbeques after a long campaign.</flavour_text>
   </monster>
   <monster>
     <name>Iron Golem</name>
@@ -449,7 +455,8 @@
     <max_damage>5</max_damage>
     <speed>2</speed>
     <cost>300</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Poor Iron Golem is always compared to his older brother. No wonder Iron feels so expendable. Steel Golem is stronger, faster, more resilient, and shinier. Who doesn't like shiny things?
+</flavour_text>
   </monster>
   <monster>
     <name>Steel Golem</name>
@@ -460,7 +467,7 @@
     <max_damage>5</max_damage>
     <speed>3</speed>
     <cost>350</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Steel Golem is secretly jealous of his younger brother, Iron Golem. Despite being better at everything, Steel has always admired the way Iron's rivets contrast so nicely with his rusty coloring. Steel Golem would scream with frustration... if he had a mouth. </flavour_text>
   </monster>
   <monster>
     <name>Roc</name>
@@ -471,7 +478,9 @@
     <max_damage>8</max_damage>
     <speed>4</speed>
     <cost>400</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Rocs are very picky about their portraits. We've received multiple complaints from their Fair Representation Committee, citing this image with "improper scaling in accordance to the grandeur and majesty of the Roc species. Please alter your image so that it is distinguishable from lesser birds of prey. We suggest the addition of a dead minuscule human in the beak." 
+
+Did we mention that rocs are also simultaneously insecure and narcissistic?</flavour_text>
   </monster>
   <monster>
     <name>Mage</name>
@@ -482,7 +491,7 @@
     <max_damage>9</max_damage>
     <speed>5</speed>
     <cost>500</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>It is an unspoken truth that all Magi loathe being go-fers for the Archmagi. The common Mage will spend all day brooding his superior's downfall while tediously crushing unicorn horns with a mortar and pestle. What's so special about silver Archmage robes anyway? The red and gold Mage robes look MUCH better. </flavour_text>
   </monster>
   <monster>
     <name>Archmage</name>
@@ -493,7 +502,7 @@
     <max_damage>9</max_damage>
     <speed>6</speed>
     <cost>700</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Whenever an Archmage makes mistakes, he will always blame his Magi underlings. "I would not go so far to call them my apprentices, for that implies some level of competence. Such a burden it is, to find good help these days." </flavour_text>
   </monster>
   <monster>
     <name>Giant</name>
@@ -504,7 +513,7 @@
     <max_damage>30</max_damage>
     <speed>4</speed>
     <cost>2000</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Giant was tired of being confused for his conceited cousin Titan, so he decided to try on electric blue to stand out more. The new color worked wonders and Giant hasn't taken it off ever since.</flavour_text>
   </monster>
   <monster>
     <name>Titan</name>
@@ -515,7 +524,7 @@
     <max_damage>30</max_damage>
     <speed>6</speed>
     <cost>5000</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Titan is a classic brute who likes to talk big and make his stylish blue cousin Giant look small. "I seriously hate dragons. This one time, I took down 10 dragons with a single lightning bolt. True story."</flavour_text>
   </monster>
   <monster>
     <name>Skeleton</name>
@@ -526,7 +535,7 @@
     <max_damage>3</max_damage>
     <speed>4</speed>
     <cost>75</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Make no bones about it, Skeletons are actually more agile than their fleshy Zombie counterparts. Must be the improved aerodynamics.</flavour_text>
   </monster>
   <monster>
     <name>Zombie</name>
@@ -537,7 +546,9 @@
     <max_damage>3</max_damage>
     <speed>2</speed>
     <cost>150</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Go home, Zombie. You're drunk. 
+
+Stop chasing those flies.</flavour_text>
   </monster>
   <monster>
     <name>Mutant Zombie</name>
@@ -548,7 +559,7 @@
     <max_damage>3</max_damage>
     <speed>4</speed>
     <cost>200</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Necromancers call them Mutant Zombies so they feel better about decomposing faster than the others. Even the undead need an occasional morale booster.</flavour_text>
   </monster>
   <monster>
     <name>Mummy</name>
@@ -559,7 +570,7 @@
     <max_damage>4</max_damage>
     <speed>4</speed>
     <cost>250</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Remember to bleach your whites, especially your wraps! Mummy knows best.</flavour_text>
   </monster>
   <monster>
     <name>Royal Mummy</name>
@@ -570,7 +581,7 @@
     <max_damage>4</max_damage>
     <speed>5</speed>
     <cost>300</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Royal Mummy has really let His Royal Self go. You'd think someone would wash those dingy orange wraps for His Majesty. </flavour_text>
   </monster>
   <monster>
     <name>Vampire</name>
@@ -581,7 +592,7 @@
     <max_damage>7</max_damage>
     <speed>4</speed>
     <cost>500</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>The vampires give thanks to the recent wave of young adult novels. Girls and young women now come willingly, asking if vampires really do sparkle. Who could refuse a free meal?</flavour_text>
   </monster>
   <monster>
     <name>Vampire Lord</name>
@@ -592,7 +603,7 @@
     <max_damage>7</max_damage>
     <speed>5</speed>
     <cost>650</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Vampire Lords know they carry an empty title. There is no hierarchy among vampires, just bad blood. </flavour_text>
   </monster>
   <monster>
     <name>Lich</name>
@@ -603,7 +614,7 @@
     <max_damage>10</max_damage>
     <speed>5</speed>
     <cost>750</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Lich knows yellow is too vibrant for his line of work, but this is the same outfit he wore when he achieved immortality. He can't help but be a bit sentimental. </flavour_text>
   </monster>
   <monster>
     <name>Power Lich</name>
@@ -614,7 +625,7 @@
     <max_damage>10</max_damage>
     <speed>6</speed>
     <cost>900</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Unlike his lesser Lich comrades, Power Lich wouldn't be caught dead in yellow. You can't lead legions of undead effectively if you don't look the part. </flavour_text>
   </monster>
   <monster>
     <name>Bone Dragon</name>
@@ -625,7 +636,7 @@
     <max_damage>45</max_damage>
     <speed>4</speed>
     <cost>1500</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Flesh is overrated. Bone Dragon never understood the point of it. Who needs lips when you can show off a menacing yellow grin of death that can demoralize armies? Bone Dragon makes all the other dragons go "HUWHAAA!" in fear. It's worth being brought back to life just to see the looks on their faces.</flavour_text>
   </monster>
   <monster>
     <name>Rogue</name>
@@ -636,7 +647,7 @@
     <max_damage>2</max_damage>
     <speed>5</speed>
     <cost>50</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Rogue wears a variety of hats, but none capture his true essence. He is sometimes a thief and sometimes a scoundrel, but never solely one or the other. The only name he closely relates to is "Rogue" - unpredictable and violent. This proves you can't just slap labels on people because not everyone fits nicely in a box.</flavour_text>
   </monster>
   <monster>
     <name>Nomad</name>
@@ -647,7 +658,7 @@
     <max_damage>5</max_damage>
     <speed>6</speed>
     <cost>200</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Nomads are great for reconnaissance. For a price they will go out, wander around like nomads do, kill whatever is in the way, then come back and tell you everything they saw. They're like talking boomerangs with swords. </flavour_text>
   </monster>
   <monster>
     <name>Ghost</name>
@@ -658,7 +669,7 @@
     <max_damage>6</max_damage>
     <speed>5</speed>
     <cost>1000</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Ghosts don't need money. The only thing they want is your body and soul. You can part with those, right?</flavour_text>
   </monster>
   <monster>
     <name>Medusa</name>
@@ -669,7 +680,7 @@
     <max_damage>10</max_damage>
     <speed>4</speed>
     <cost>350</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>According to rumor, Medusa has scale tatoos of her favorite pet statues on her right arm but no one has ever gotten close enough to confirm it.</flavour_text>
   </monster>
   <monster>
     <name>Genie</name>
@@ -680,7 +691,7 @@
     <max_damage>30</max_damage>
     <speed>6</speed>
     <cost>750</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Genies wish people would knock instead of rub their front door. </flavour_text>
   </monster>
   <monster>
     <name>Earth Elemental</name>
@@ -691,7 +702,7 @@
     <max_damage>5</max_damage>
     <speed>3</speed>
     <cost>500</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Always down to earth, this guy doesn't mean to put you between a rock and a hard place, but you'll have to fight your way out of this stony encounter.</flavour_text>
   </monster>
   <monster>
     <name>Water Elemental</name>
@@ -702,7 +713,7 @@
     <max_damage>7</max_damage>
     <speed>4</speed>
     <cost>500</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Here's one Elemental dude who likes to go with the flow. It's all water under the bridge to him.</flavour_text>
   </monster>
   <monster>
     <name>Fire Elemental</name>
@@ -713,7 +724,7 @@
     <max_damage>5</max_damage>
     <speed>5</speed>
     <cost>500</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>Fire Elemental is definitely hotheaded. It doesn't take much to spark off an argument with this one. If you try to recruit Fire, he will assume you have money to burn. Literally. </flavour_text>
   </monster>
   <monster>
     <name>Air Elemental</name>
@@ -724,6 +735,6 @@
     <max_damage>8</max_damage>
     <speed>6</speed>
     <cost>500</cost>
-    <flavour_text></flavour_text>
+    <flavour_text>The Air Elemental has strange hobbies, but so would you if you had the power of invisibility. Air Elementals would make great spies, except they have more fun tapping your shoulder and disappearing instead. </flavour_text>
   </monster>
 </monster_listing>

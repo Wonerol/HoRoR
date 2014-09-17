@@ -10,12 +10,16 @@ class ArmiesController < ApplicationController
   # Army, Stack, and Armies are used inconsistently...
   def battle
     enemy_army = Array.new
+
     if !params[:attack]
       # erase old enemy group (if any)
       wipe_old_enemy_army()
 
       # create an army to fight against
       enemy_army = create_wandering_monsters()
+
+      # heal player's army
+      Army.where(user_id: current_user.id, ai_controlled: false).update_all(residual_dmg: 0)
     else
       enemy_army = Army.where(user_id: current_user.id, ai_controlled: true)
     end
@@ -105,7 +109,8 @@ class ArmiesController < ApplicationController
         e_stack = Army.new(user_id: current_user.id,
                           monster_id: monster_id,
                           monster_amount: monster_amount,
-                          ai_controlled: true)
+                          ai_controlled: true,
+                          residual_dmg: 0)
         enemy_army.push(e_stack)
       end
 
@@ -118,6 +123,23 @@ class ArmiesController < ApplicationController
       return enemy_army
     end
 
+    def calc_damage(attacker, defender)
+      bonus = 0.0
+
+      base_damage = (attacker.min_damage..attacker.max_damage).to_a.sample
+
+      attack_diff = attacker.attack - defender.defence
+      if attack_diff > 0
+        bonus = base_damage * attack_diff * 0.10
+      elsif attack_diff < 0
+        bonus = base_damage * attack_diff * 0.05
+      end
+
+      total_damage = (base_damage + bonus).round()
+
+      return total_damage
+    end
+
     # simulates a full round of combat, each stack getting one turn
     # (assuming they live long enough to take it)
     def resolve_combat(enemy_army, player_army)
@@ -128,12 +150,13 @@ class ArmiesController < ApplicationController
         cur_report = { a_monster_name: '',
                        d_monster_name: '',
                        casualties: 0,
-                       side: ''}
+                       side: '',
+                       damage: 0 }
 
         # choose a stack
         # inefficient. frivolous database calls
         # divide pending armies into priority tiers
-        turn_priorities = pending_stacks.group_by { |elem| Monster.find(elem.monster_id).cost }
+        turn_priorities = pending_stacks.group_by { |elem| Monster.find(elem.monster_id).speed }
         # randomly choose from the highest remaining tier
         attacking_stack = turn_priorities[turn_priorities.keys.max].sample
         # choose someone for it to attack
@@ -155,37 +178,42 @@ class ArmiesController < ApplicationController
         defending_stack = d_provenance.sample
 
         # make the attack
-        casualties = 1
+        defending_monster = Monster.find(defending_stack.monster_id)
+        attacking_monster = Monster.find(attacking_stack.monster_id)
+
+        # calculate damage
+        unit_damage = calc_damage(attacking_monster, defending_monster)
+        total_damage = unit_damage * attacking_stack.monster_amount
+
+        # determine casualties
+        # either kills or doesn't, no reduced HP
+        casualties = 0
+        residual_dmg = 0
+        if total_damage > 0
+          casualties = total_damage / defending_monster.hp
+          residual_dmg = total_damage % defending_monster.hp
+        end
+
+        casualties = [casualties, defending_stack.monster_amount].min
+
         new_num_monsters = defending_stack.monster_amount - casualties
-        casualty_monster = Monster.find(defending_stack.monster_id).name
-        attacking_monster = Monster.find(attacking_stack.monster_id).name
 
+        # file the report
         cur_report[:casualties] = casualties
-        cur_report[:d_monster_name] = casualty_monster
-        cur_report[:a_monster_name] = attacking_monster
+        cur_report[:d_monster_name] = defending_monster.name
+        cur_report[:a_monster_name] = attacking_monster.name
+        cur_report[:damage] = total_damage
 
-        # update army
+        # update the defender's army
         if new_num_monsters <= 0
           # destroy this army listing
           defending_stack.destroy()
 
           # remove from candidates
-          puts "BEFORE DELETION"
-          puts "#{d_provenance}, #{defending_stack}"
-          #puts "pending_stack length", pending_stacks.length
-          #puts "player_army.length", player_army.length
-          #puts "enemy_army.length", enemy_army.length
-          #puts "prov.length", d_provenance.length
           pending_stacks.delete(defending_stack)
           d_provenance.delete(defending_stack)
-          puts "AFTER DELETION"
-          puts d_provenance
-          #puts "pending_stack length", pending_stacks.length
-          #puts "player_army.length", player_army.length
-          #puts "enemy_army.length", enemy_army.length
-          #puts "prov.length", d_provenance.length
         else
-          defending_stack.assign_attributes({ :monster_amount => new_num_monsters })
+          defending_stack.assign_attributes({ :monster_amount => new_num_monsters, :residual_dmg => residual_dmg })
           defending_stack.save()
         end
 
