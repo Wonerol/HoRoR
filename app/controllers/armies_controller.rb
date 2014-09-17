@@ -41,9 +41,9 @@ class ArmiesController < ApplicationController
     @victory = false
     if @enemy_stacks.empty?
       @victory = true
-      @gold_prize = rand(100) + 1
 
       player = User.find(current_user)
+      @gold_prize = player.gold_prize
       new_gold = player.gold + @gold_prize
       player.assign_attributes({ :gold => new_gold })
       player.save(:validate => false)
@@ -66,7 +66,7 @@ class ArmiesController < ApplicationController
     num_monsters = params[:monster_amount].to_i
 
     if user.recruit(monster, army, army_params, num_monsters)
-      flash[:success] = "Successfully recruited #{monster.name}"
+      flash[:success] = "Successfully recruited #{monster.name}(#{num_monsters})"
     else
       flash[:failure] = "Failed to recruit #{monster.name}"
     end
@@ -76,7 +76,7 @@ class ArmiesController < ApplicationController
 
   private
     def army_params
-      params.permit(:user_id, :monster_id, :monster_amount, :authenticity_token)
+      params.permit(:user_id, :monster_id, :monster_amount, :authenticity_token, :utf8, :commit, :id)
     end
 
     def has_army
@@ -144,8 +144,12 @@ class ArmiesController < ApplicationController
         end
       end
 
+      player = User.find(current_user)
+      gold_prize = monster_army_value
 
       ActiveRecord::Base.transaction do
+        player.assign_attributes({ :gold_prize => gold_prize })
+        player.save(:validate => false)
         for e_stack in enemy_army
           e_stack.save
         end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140917021558) do
+ActiveRecord::Schema.define(version: 20140917152148) do
 
   create_table "armies", force: true do |t|
     t.integer  "monster_id"
@@ -48,6 +48,7 @@ ActiveRecord::Schema.define(version: 20140917021558) do
     t.string   "remember_token"
     t.boolean  "admin",           default: false
     t.integer  "gold"
+    t.integer  "gold_prize"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

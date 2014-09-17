@@ -3,23 +3,9 @@
 <h1><%= @monster.name %></h1>
 <br>
 
-<style>
-  table {
-    border-style:solid;
-  }
-  tr {
-    border-style:solid;
-  }
-  td {
-    border-style:solid;
-    padding:9px;
-    text-align:center;
-  }
-</style>
-
 <%= image_tag(image_path_for(@monster), alt: "(picture of #{@monster.name})", style: "float:left") %>
 
-<table>
+<table class="stats_table">
   <tr>
     <td><b>Attack</b></td>
     <td><b>Defence</b></td>
@@ -45,7 +31,25 @@
 <br>
 <p><i><%= @monster.flavour_text %></i><p>
 
-<br>
-<p style="float:left"><%= pluralize(@monster.cost, "gold piece") %></p>
+<div style="float:left; margin-right:150px">
+  <br>
+  cost per troop:
+  <br>
 
-<%= button_to 'Recruit', { controller: "armies", action: "recruit", monster_id: @monster.id, user_id: current_user.id, monster_amount: 1 } , method: :post %>
+  <%= pluralize(@monster.cost, "gold piece") %><%= image_tag('gold_small_neat.png', alt: "(picture of gold)") %>
+</div>
+
+<div>
+  <br>
+  your gold:
+  <br>
+
+  <%= pluralize(@user_gold, "gold piece") %><%= image_tag('gold_small_neat.png', alt: "(picture of gold)") %>
+</div>
+
+<%= form_tag :controller=> "armies", :action => "recruit", :params => params.merge(user_id: current_user, monster_id: @monster.id) do %>
+
+<%= number_field_tag 'monster_amount', params[:monster_amount], in: 1..(@user_gold / @monster.cost), style: "width:80px", onchange: "toggle()" %>
+
+  <%= submit_tag 'Recruit'%>
+<% end %>

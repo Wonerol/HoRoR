@@ -48,6 +48,7 @@ describe "Monster pages" do
     it { should have_title(monster.name) }
 
     it "allows recruitment" do
+      fill_in 'monster_amount', :with => 1
       expect { click_button "Recruit" }.to change(Army, :count).by(1)
     end
   end

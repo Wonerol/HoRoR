@@ -14,10 +14,9 @@ describe "StaticPages" do
   describe "Home page" do
     before { visit root_path }
 
-    let(:heading) { 'HoRoR' }
     let(:page_title) { '' }
 
-    it_should_behave_like "all static pages"
+    it { should have_title(full_title(page_title)) }
     it { should_not have_title('| Home')}
   end
 

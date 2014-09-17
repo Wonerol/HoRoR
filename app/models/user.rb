@@ -63,6 +63,6 @@ monster_amount is a reasonable number
     end
 
     def default_values
-      self.gold ||= 2000
+      self.gold ||= 5000
     end
 end

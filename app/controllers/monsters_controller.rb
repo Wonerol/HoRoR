@@ -20,5 +20,6 @@ class MonstersController < ApplicationController
 
   def show
     @monster = Monster.find(params[:id])
+    @user_gold = User.find(current_user).gold
   end
 end
