@@ -44,6 +44,5 @@
 </table>
 
 <% if !@victory && !@defeat %>
-  <%= link_to "Flee", army_path(current_user) %>
-  <%= button_to 'Attack!', { controller: "armies", action: "battle", user_id: current_user.id, attack: true } , method: :post %>
+  <%= button_to 'Attack!', { controller: "armies", action: "battle", user_id: current_user.id, attack: true } , method: :post, class: "btn btn-large btn-danger " %>
 <% end %>
