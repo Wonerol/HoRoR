@@ -101,18 +101,49 @@ class ArmiesController < ApplicationController
     # probably not the best place for this
     #============= GAME LOGIC =========================
     
+    # we want a force roughly the same strength as the player's
     def create_wandering_monsters()
       enemy_army = Array.new
-      5.times do
+
+      # Ruby must have a better way of doing this
+      player_gold_value = 0
+      for army in Army.where(user_id: current_user.id, ai_controlled: false)
+        player_gold_value += army.get_gold_value
+      end
+
+      # monster army limits
+      value_floor = 0.5
+      value_ceiling = 1.5
+      value_ratio = 0
+
+      monster_army_value = 0
+      army_limit = 8
+
+      # lazy, brute force method
+      # generate values at semi-random and throw them away if they don't work
+      done = false
+      while !done do
+
         monster_id = Monster.offset(rand(Monster.count)).first.id
-        monster_amount = rand(3) + 1
+        monster_amount = rand(8) + 1
+        monster_army_value += (Monster.find(monster_id).cost * monster_amount)
         e_stack = Army.new(user_id: current_user.id,
                           monster_id: monster_id,
                           monster_amount: monster_amount,
                           ai_controlled: true,
                           residual_dmg: 0)
         enemy_army.push(e_stack)
+
+        value_ratio = monster_army_value / player_gold_value.to_f
+
+        if value_ratio >= value_floor && value_ratio <= value_ceiling
+          done = true
+        elsif value_ratio > value_ceiling || enemy_army.length > army_limit
+          enemy_army.clear
+          monster_army_value = 0
+        end
       end
+
 
       ActiveRecord::Base.transaction do
         for e_stack in enemy_army
